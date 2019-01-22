@@ -1,0 +1,1000 @@
+   27  cd work/abe487/problems/parse-blast
+   28  ls
+   29  ./parse_blast_tab.py
+   30  ./parse_blast_tab.py dolphin.tab
+   31  cd work/abe487/problems/parse-blast
+   32  ls
+   33  nano parse_blast_tab.py
+   34  exit
+   35  cd work/abe487/problems/parse-blast
+   36  ls
+   37  ./parse_blast_tab.py
+   38  ./parse_blast_tab.py dolphin.tab
+   39  ./parse_blast_tab.py dolphin.tab -p 98
+   40  ./parse_blast_tab.py dolphin.tab
+   41  ./parse_blast_tab.py dolphin.tab -p 98
+   42  ./parse_blast_tab.py dolphin.tab
+   43  ./parse_blast_tab.py dolphin.tab -p 98
+   44  ./parse_blast_tab.py dolphin.tab -e 5e-20
+   45  ./parse_blast_tab.py dolphin.tab
+   46  ./parse_blast_tab.py dolphin.tab -e 5e-20
+   47  ./parse_blast_tab.py dolphin.tab
+   48  ./parse_blast_tab.py dolphin.tab -e 5e-20
+   49  ./parse_blast_tab.py dolphin.tab
+   50  ./parse_blast_tab.py dolphin.tab -e 5e-20 -p 98
+   51  ./parse_blast_tab.py dolphin.tab
+   52  ./parse_blast_tab.py dolphin.tab -e 5e-20
+   53  ./parse_blast_tab.py dolphin.tab
+   54  ./parse_blast_tab.py dolphin.tab -e 5e-20 -p 98
+   55  ./parse_blast_tab.py dolphin.tab -e 5e-20
+   56  ./parse_blast_tab.py dolphin.tab
+   57  ./parse_blast_tab.py dolphin.tab -e 5e-20 -p 98
+   58  ./parse_blast_tab.py dolphin.tab
+   59  ./parse_blast_tab.py dolphin.tab -e 5e-20 -p 98
+   60  ./parse_blast_tab.py dolphin.tab
+   61  ./parse_blast_tab.py dolphin.tab -e 5e-20
+   62  ./parse_blast_tab.py dolphin.tab
+   63  ./parse_blast_tab.py dolphin.tab -e 5e-20
+   64  ./parse_blast_tab.py dolphin.tab -p 98
+   65  ./parse_blast_tab.py dolphin.tab -e 5e-20 -p 98
+   66  ./parse_blast_tab.py dolphin.tab
+   67  ./parse_blast_tab.py dolphin.tab -p 98
+   68  ./parse_blast_tab.py dolphin.tab
+   69  ./parse_blast_tab.py dolphin.tab -p 98
+   70  ./parse_blast_tab.py dolphin.tab -e 5e-20 -p 98
+   71  ./parse_blast_tab.py dolphin.tab -p 98
+   72  ./parse_blast_tab.py dolphin.tab
+   73  ./parse_blast_tab.py dolphin.tab -e 5e-20
+   74  ./parse_blast_tab.py dolphin.tab
+   75  ./parse_blast_tab.py dolphin.tab -p 98
+   76  ./parse_blast_tab.py dolphin.tab -e 5e-20
+   77  ./parse_blast_tab.py dolphin.tab -e 5e-20 -p 96
+   78  ./parse_blast_tab.py dolphin.tab -e 5e-20
+   79  ./parse_blast_tab.py dolphin.tab -p 98
+   80  ./parse_blast_tab.py dolphin.tab
+   81  ./parse_blast_tab.py dolphin.tab -p 98
+   82  ./parse_blast_tab.py dolphin.tab -e 5e-20
+   83  ./parse_blast_tab.py dolphin.tab -e 5e-20 -p 96
+   84  ./parse_blast_tab.py dolphin.tab
+   85  ./parse_blast_tab.py dolphin.tab -e 5e-20 -p 96
+   86  ./parse_blast_tab.py dolphin.tab
+   87  ./parse_blast_tab.py dolphin.tab -e 5e-20 -p 96
+   88  ./parse_blast_tab.py dolphin.tab -e 5e-20
+   89  ./parse_blast_tab.py dolphin.tab -p 98
+   90  ./parse_blast_tab.py dolphin.tab
+   91  ./parse_blast_tab.py dolphin.tab -p 98
+   92  ./parse_blast_tab.py dolphin.tab -e 5e-20
+   93  ./parse_blast_tab.py dolphin.tab -e 5e-20 -p 96
+   94  ./parse_blast_tab.py dolphin.tab
+   95  ./parse_blast_tab.py dolphin.tab -e 5e-20 -p 96
+   96  ./parse_blast_tab.py dolphin.tab -e 5e-20
+   97  ./parse_blast_tab.py dolphin.tab -p 98
+   98  ./parse_blast_tab.py dolphin.tab
+   99  ls
+  100  make test
+  101  -vv
+  102  make test -vv
+  103  make test
+  104  ./parse_blast_tab.py dolphin.tab -p 98
+  105  ./parse_blast_tab.py dolphin.tab -e 5e-20
+  106  ./parse_blast_tab.py dolphin.tab
+  107  ./parse_blast_tab.py dolphin.tab -e 5e-20
+  108  ./parse_blast_tab.py dolphin.tab -p 98
+  109  ./parse_blast_tab.py dolphin.tab -e 5e-20 -p 96
+  110  make test
+  111  ./parse_blast_tab.py dolphin.tab -e 5e-20 -p 96
+  112  ./parse_blast_tab.py dolphin.tab -p 98
+  113  git commit -am '5/6 completed'
+  114  git push
+  115  ./parse_blast_tab.py dolphin.tab
+  116  ./parse_blast_tab.py dolphin.tab -p 98
+  117  make test
+  118  ./parse_blast_tab.py dolphin.tab -p 98
+  119  make test
+  120  ./parse_blast_tab.py dolphin.tab
+  121  ./parse_blast_tab.py dolphin.tab -p 98
+  122  ./parse_blast_tab.py dolphin.tab -e 5e-20 -p 96
+  123  ./parse_blast_tab.py dolphin.tab -p 98
+  124  ./parse_blast_tab.py dolphin.tab -e 5e-20
+  125  make test
+  126  ./parse_blast_tab.py dolphin.tab
+  127  ./parse_blast_tab.py dolphin.tab -p 96
+  128  ./parse_blast_tab.py dolphin.tab
+  129  ./parse_blast_tab.py dolphin.tab -e 5e-20
+  130  make test
+  131  ./parse_blast_tab.py dolphin.tab -e 5e-20
+  132  ./parse_blast_tab.py dolphin.tab
+  133  ./parse_blast_tab.py dolphin.tab -e 5e-20
+  134  make test
+  135  ./parse_blast_tab.py dolphin.tab -e 5e-20
+  136  make test
+  137  git commit -am 'completed parse-blast'
+  138  git push
+  139  ./parse_blast_tab.py dolphin.tab -e 5e-20
+  140  ./parse_blast_tab.py dolphin.tab
+  141  make test
+  142  git commit -am 'completed parse-blast'
+  143  git push
+  144  exit
+  145  cd work/abe487/problems/parse-blast
+  146  ls
+  147  nano parse_blast_tab.py
+  148  cd /rsgrps/bh_class/jaea
+  149  ls
+  150  cd Centrifuge
+  151  ls
+  152  cd std-out
+  153  ls
+  154  cd
+  155  cd scripts
+  156  ls
+  157  cd ..
+  158  ls
+  159  cd jaea
+  160  ls
+  161  cd /rsgrps/bh_class/jaea
+  162  ls
+  163  cd anvio-genes
+  164  ls
+  165  cd taxonommy
+  166  ls
+  167  cd taonomy
+  168  cd taxonomy
+  169  ls
+  170  scp nucleotides-centrifuge_report.tsv /Users/JRA/Desktop
+  171  python3
+  172  cd /rsgrps/bh_class/jaea/anvio-genes
+  173  ls
+  174  mkdir function
+  175  ls
+  176  cd function
+  177  nano uproc_function.sh
+  178  ls
+  179  mkdir std-err std-out
+  180  ls
+  181  qsub -e std-err -o std-out uproc_function.sh
+  182  source .bashrc
+  183  source ./bashrc
+  184  qsub -e std-err -o std-out uproc_function.sh
+  185  ls
+  186  nano uproc_function.sh
+  187  head uproc-out.pfam
+  188  cd std-out
+  189  ls
+  190  cd ..
+  191  ls
+  192  pwd
+  193  nano format-anvio.pl
+  194  head uproc-out.kegg
+  195  nano format-anvio.pl
+  196  ls
+  197  exit
+  198  ls
+  199  ls -a
+  200  source .bashrc
+  201  cd /rsgrps/bh_class/jaea/anvio-genes/function
+  202  ls
+  203  qsub -e std-err -o std-out uproc_function.sh
+  204  qstat -u jaea
+  205  ls
+  206  chmod 755 format-anvio.pl
+  207  ls -a
+  208  ls -al
+  209  ./format-anvio.pl uproc-out.kegg /rsgrps/bh_class/kegg_to_desc uproc-kegg-anvio kegg
+  210  ls
+  211  ./format-anvio.pl uproc-out.kegg /rsgrps/bh_class/kegg_to_desc uproc-kegg-anvio kegg
+  212  ./format-anvio.pl uproc-out.pfam /rsgrps/bh_class/pfam_to_domain uproc-pfam-anvio pfam
+  213  cat uproc-kegg-anvio > input_matrix.txt
+  214  egrep -v "gene_callers_id" uproc-pfam-anvio >> input_matrix.txt
+  215  ls
+  216  cd ..
+  217  ls
+  218  cd taxonomy
+  219  ls
+  220  pwd
+  221  ls
+  222  cd /rsgrps/bh_class/jaea
+  223  ls
+  224  cd anvio-genes
+  225  ls
+  226  cd function
+  227  ls
+  228  cd ..
+  229  ls
+  230  cd taxonomy
+  231  ls
+  232  cd ..
+  233  ls
+  234  cd function
+  235  ls
+  236  cd std-out
+  237  ls
+  238  cd ..
+  239  ls
+  240  cd ..
+  241  ls
+  242  cd taxonomy
+  243  ls
+  244  cd ..
+  245  ls
+  246  cd function
+  247  ls
+  248  cd ..
+  249  ls
+  250  cd ..
+  251  ls
+  252  cd anvio-genes
+  253  cd ..
+  254  ls
+  255  cd Centrifuge
+  256  ls
+  257  cd ..
+  258  ls
+  259  cd Centrifuge
+  260  ls
+  261  cd scripts
+  262  ls
+  263  nano centrifuge_single_tax.sh
+  264  cd ..
+  265  ls
+  266  cd ..
+  267  ls
+  268  cd anvio-genes
+  269  ls
+  270  cd taxonomy
+  271  ls
+  272  cd ..
+  273  ls
+  274  cd ..
+  275  ls
+  276  cd Centrifuge
+  277  ls
+  278  nano config.sh
+  279  cd ..
+  280  ls
+  281  cd anvio-genes
+  282  ls
+  283  cd /rsgrps/bh_class/jaea
+  284  ls
+  285  cd anvio-functions
+  286  cd anvio-genes
+  287  ls
+  288  cd function
+  289  ls
+  290  cd /rsgrpgs/bh_class/jaea
+  291  cd /rsgrps/bh_class/jaea
+  292  ls
+  293  cd anvio-genes
+  294  ls
+  295  cd function
+  296  ls
+  297  cd /rsgrps/bh_class/jaea
+  298  ls
+  299  cd read_recruit
+  300  ls
+  301  cd bam
+  302  ls
+  303  pwd
+  304  cd ..
+  305  ls
+  306  cd ..
+  307  cd
+  308  ls
+  309  cd work
+  310  (cd metagenomics-book && git pull)
+  311  cp -r metagenomics-book/problems/grph abe487/problems
+  312  cp -r metagenomics-book/problems/subs abe487/problems
+  313  cd abe487/problems
+  314  git add -A grph
+  315  git commit -am 'adding grph extra credit'
+  316  git push
+  317  git add -A subs
+  318  git commit -am 'adding subs extra credit'
+  319  git push
+  320  ls
+  321  cd grph
+  322  ls
+  323  cd ..
+  324  cd work
+  325  (cd metagenomics-book && git pull)
+  326  cp -r metagenomics-book/problems/last_quiz abe487/problems
+  327  git add -A last_quiz
+  328  ls
+  329  cd abe487
+  330  ls
+  331  cd problems
+  332  ls
+  333  cd last_quiz
+  334  ls
+  335  cd ..
+  336  git add -A last_quiz
+  337  cd abe487
+  338  ls
+  339  git add -A last_quiz
+  340  cd problems
+  341  git add -A last_quiz
+  342  git commit -am 'adding last_quiz'
+  343  git push
+  344  ls
+  345  cd last_quiz
+  346  ls
+  347  ./adder.py
+  348  ./adder.py hello 1
+  349  ./adder.py
+  350  ./adder.py hello 1
+  351  ./adder.py 2 1
+  352  ls
+  353  cd ..
+  354  ls
+  355  cd subs
+  356  ls
+  357  head input1.txt
+  358  ls
+  359  ./subs.py
+  360  ./subs.py foobarfoo foo
+  361  ls
+  362  cd work
+  363  ls
+  364  cd abe487
+  365  ls
+  366  cd problems/last_quiz
+  367  ls
+  368  nano adder.py
+  369  git commit -am 'last quiz
+  370  '
+  371  git push
+  372  cd ..
+  373  ls
+  374  cd subs
+  375  ls
+  376  nano subs.py
+  377  cd /rsgrps/bh_class/jaea
+  378  ls
+  379  cd fastq
+  380  ls
+  381  cd ..
+  382  cd fasta
+  383  ls
+  384  cd ..
+  385  cd assembly
+  386  ls
+  387  cd ..
+  388  cd read_recruit
+  389  ls
+  390  cd bam
+  391  ls
+  392  cd ..
+  393  ls
+  394  cd ..
+  395  ls
+  396  source ./bashrc
+  397  cd
+  398  ls -al
+  399  source .bashrc
+  400  ls
+  401  cd /rsgrps/bh_class/jaea
+  402  ls
+  403  cd anvio-genes
+  404  ls
+  405  cd function
+  406  ls
+  407  awk 'BEGIN { FS="\t"} { print $3 } ' uproc-kegg-anvio > kegg_ids
+  408  ls
+  409  head kegg_ids
+  410  cd /rsgrps/bh_class/jaea
+  411  ls
+  412  cd anvio-genes
+  413  ls
+  414  cd function
+  415  ls
+  416  qsub functional_counts.sh
+  417  source ~/.bashrc
+  418  qsub functional_counts.sh
+  419  nano functional_counts.sh
+  420  qsub functional_counts.sh
+  421  nano functional_counts.sh
+  422  ls
+  423  cd /rsgrps/bh_class/jaea/
+  424  ls
+  425  cd anvio-genes
+  426  ls
+  427  cd function
+  428  ls
+  429  nano functional_counts.sh
+  430  cd /rsgrps/bh_class/jaea/anvio-genes/function
+  431  ls
+  432  nano functional_counts.sh
+  433  qsub functional_counts.sh
+  434  source ~/.bashrc
+  435  qsub functional_counts.sh
+  436  ls
+  437  functional_counts.sh kegg_ids kegg_to_broadcat
+  438  ./functional_counts.sh kegg_ids kegg_to_broadcat
+  439  $functional_counts.sh kegg_ids kegg_to_broadcat
+  440  ls
+  441  head kegg_pathways.txt
+  442  nano kegg_pathways.txt
+  443  nano functional_counts.sh.e923949
+  444  nano functional_counts.sh
+  445  cd /rsgrps/bh_class/jaea/anvio-genes/function
+  446  ls
+  447  ls -al
+  448  cat kegg_pathways.txt | sort | uniq -c
+  449  cd /rsgrps/bh_class/jaea/anvio-genes/function
+  450  ls
+  451  cat kegg_pathways.txt | sort | uniq -c
+  452  cd /rsgrps/bh_class/jaea
+  453  ls
+  454  cd anvio-genes
+  455  ls
+  456  cd function
+  457  ls
+  458  nano functional_counts.sh
+  459  ls
+  460  source ./bashrc
+  461  cd /rsgrps/bh_class
+  462  ls
+  463  nano kegg_to_broadcast
+  464  nano kegg_to_broadcat
+  465  cp kegg_to_broadcat /rsgrps/bh_class/jaea/anvio-genes/function
+  466  ls
+  467  cd /rsgrps/bh_class/jaea/anvio-genes/function
+  468  ls
+  469  chmod +x functional_counts.sh
+  470  functional_counts.sh keggs_ids kegg_to_broadcat
+  471  ./functional_counts.sh keggs_ids kegg_to_broadcat
+  472  ls
+  473  qsub functional_counts.sh
+  474  source ~/.bashrc
+  475  qsub functional_counts.sh
+  476  cd /rsgrps/bh_class/jaea/anvio-genes/function
+  477  ls
+  478  cat kegg_pathways.txt | sort | uniq -c
+  479  ls
+  480  nano kegg_pathway_counts.txt
+  481  nano kegg_pathways.txt
+  482  cd /rsgrps/bh_class/jaea/anvio-genes/function
+  483  ls
+  484  nano kegg_pathways.txt
+  485  nano kegg_pathways_counts.txt
+  486  nano kegg_pathway_counts.txt
+  487  cd /rsgrps/bh_class/jaea/anvio-genes/function
+  488  ls
+  489  nano uproc_pathway_counts.txt
+  490  nano kegg_pathway_counts.txt
+  491  nano functional_counts.sh
+  492  nano kegg_pathway_counts.txt
+  493  ls
+  494  cd ..
+  495  ls
+  496  cd ..
+  497  ls
+  498  cd fastq
+  499  ls
+  500  cd /rsgrps/bh_class/jaea/read_recruit/bam/std-err
+  501  ls
+  502  cat 894036.head1.cm.cluster.ER
+  503  cat 894045.head1.com.cluster.ER
+  504  cat 894045.head1.cm.cluster.ER
+  505  ls
+  506  cd /rsgrps/bh_class/jaea/
+  507  ls
+  508  cd anvio-genes
+  509  ls
+  510  cd function
+  511  ls
+  512  nano kegg_pathway_count.txt
+  513  nano kegg_pathway_counts.txt
+  514  ls
+  515  cd work
+  516  ls
+  517  logout
+  518  home
+  519  ls
+  520  cd work
+  521  ls
+  522  cd /rsgrps/bh_class
+  523  ls
+  524  mkdir jaea
+  525  ls
+  526  cd bin
+  527  ls
+  528  cd ..
+  529  ls
+  530  cd ncbi
+  531  ls
+  532  cd ..
+  533  cd temp
+  534  ls
+  535  cd
+  536  cd .ssh
+  537  cat id_rsa.pub
+  538  cd /rsgrps/bh_class/jaea
+  539  ls
+  540  git clone git@github.com:jaeanderson/biosys-analytics.git
+  541  cd ..
+  542  ls
+  543  git clone git@github.com:jaeanderson/biosys-analytics.git
+  544  git clone git@github.com:jaea/biosys-analytics.git
+  545  ls
+  546  cd jaea
+  547  ls
+  548  git clone git@github.com:jaea/biosys-analytics.git
+  549  git clone git@github.com:jaeanderson/biosys-analytics.git
+  550  ssh -T jaeanderson@github.com
+  551  ssh -T git@github.com
+  552  git clone https://github.com/jaeanderson/biosys-analytics.git
+  553  cd /rsgrps/bh_class/jaea
+  554  ls
+  555  cd biosys-analytics
+  556  ls
+  557  cd assignments
+  558  ls
+  559  cd 01-unix
+  560  ls
+  561  file README.md
+  562  cat README.md
+  563  mkdir files
+  564  ls
+  565  cd /rsgrps/bh_class/jaea
+  566  ls
+  567  cd biosys-analytics
+  568  ls
+  569  cd lectures
+  570  ls
+  571  cd ..
+  572  ls
+  573  cd assignments
+  574  ls
+  575  cd ..
+  576  ls
+  577  env | head
+  578  echo $PATH
+  579  echo $PATH | sed "s/:/\n/g"
+  580  echo "export PATH=/rsgrps/bhurwitz/hurwitzlab/bin:$PATH" >> ~/.bashrc
+  581  ls
+  582  cd /rsgrps/bh_class/jaea
+  583  ls
+  584  cd biosys-analytics
+  585  ls
+  586  git remote add upstream https://github.om/hurwitzlab/biosys-analytics.git
+  587  git pull upstream master
+  588  git remote add upstream https://github.com/hurwitzlab/biosys-analytics.git
+  589  git pull upstream master
+  590  cd..
+  591  ..
+  592  git pull upstream master
+  593  git remote add upstream https://github.com/hurwitzlab/biosys-analytics.git
+  594  cd ..
+  595  ls
+  596  git pull upstream master
+  597  ls
+  598  cd biosys-analytics
+  599  ls
+  600  git pull upstream master
+  601  cd ..
+  602  ls
+  603  cd biosys-analytics
+  604  ls
+  605  git remote -v
+  606  git remote rm upstream
+  607  git remote -v
+  608  ls
+  609  git remote add upstream https://github.com/hurwitzlab/biosys-analytics.git
+  610  git remote -v
+  611  git pull upstream master
+  612  ls
+  613  cd assignments
+  614  ls
+  615  cd 01-unix-grad
+  616  ls
+  617  cat README.md
+  618  cd ..
+  619  ls
+  620  cd 01-unix
+  621  ls
+  622  cd files
+  623  ls
+  624  help wget
+  625  help 'wget'
+  626  help
+  627  wget https://www.constitution.org/usdeclar.txt
+  628  ls
+  629  wget https://www.usconstitution.net/const.txt
+  630  ls
+  631  wget https://www.gutenberg.org/files/25344/25344-0.txt > scarlet.txt
+  632  ls
+  633  cat scarlet.txt
+  634  cat 25344-0.txt
+  635  ls
+  636  ls -h
+  637  ls -l
+  638  rm 25344-0.txt
+  639  ls
+  640  rm scarlet.txt
+  641  ls
+  642  wget https://www.gutenberg.org/files/25344/25344-0.txt >> scarlet.txt
+  643  ls
+  644  ls -l
+  645  rm scarlet.txt
+  646  rm 25344-0.txt
+  647  ls -l
+  648  wget https://www.gutenberg.org/files/25344/25344-0.txt < scarlet.txt
+  649  wget https://www.gutenberg.org/files/25344/25344-0.txt >< scarlet.txt
+  650  wget https://www.gutenberg.org/files/25344/25344-0.txt > | < scarlet.txt
+  651  wget https://www.gutenberg.org/files/25344/25344-0.txt > scarlet.txt <
+  652  ls
+  653  wget -O scarlet.txt https://www.gutenberg.org/files/25344/25344-0.txt
+  654  ls
+  655  ls -l
+  656  cat scarlet.txt
+  657  cd ..
+  658  ls
+  659  cd ..
+  660  ls
+  661  head 01-unix
+  662  cd 01-unix
+  663  ls
+  664  head README.md
+  665  cat README.md
+  666  find -h
+  667  find --help
+  668  ls
+  669  cd files
+  670  ls
+  671  wc -l const.txt
+  672  wc -l scarlet.txt
+  673  wc -l usdeclar.txt
+  674  wc -l const.txt | bc
+  675  FILE_1 = wc -l const.txt
+  676  F1 = wc -l const.txt
+  677  wc -l scarlet.txt
+  678  wc -l usdeclar.txt
+  679  LS
+  680  ls
+  681  cat >> answers.txt
+  682  ls
+  683  cd /rsgrps/bh_class/jaea
+  684  ls
+  685  cd biosys-analytics
+  686  ls
+  687  cd assignments
+  688  ls
+  689  cd 01-unix
+  690  ls
+  691  cd files
+  692  ls
+  693  ls -l
+  694  head answers.txt
+  695  cd /rsgrps/bh_class/jaea
+  696  ls
+  697  cd biosys-analytics
+  698  ls
+  699  cd assignments
+  700  ls
+  701  cd 01-unix
+  702  ls
+  703  cd files
+  704  ls
+  705  ls -l
+  706  ls -l > answers.txt
+  707  ls
+  708  ls -l
+  709  head answers.txt
+  710  ls
+  711  head answers.txt
+  712  rm answers.txt
+  713  ls
+  714  echo "ls -l" >> answers.txt
+  715  ls
+  716  ls -l
+  717  head answers.txt
+  718  ls -l >> answers.txt
+  719  ls
+  720  ls -l
+  721  ls
+  722  head answers.txt
+  723  rm answers.txt
+  724  ls
+  725  echo "$ls -l" >> answers.txt
+  726  head answers.txt
+  727  ls
+  728  rm answers.txt
+  729  ls
+  730  echo "$ls -l" > answers.txt
+  731  head answers.txt
+  732  pwd
+  733  rm answers.txt
+  734  echo "$ ls -l" > answers.txt
+  735  head answers.txt
+  736  ls -l >> answers.txt
+  737  head answers.txt
+  738  wc -l *.txt
+  739  echo "$ wc -l *.txt" >> answers.txt
+  740  ls
+  741   head answers.txt
+  742  cat answers.txt
+  743  wc -l *.txt >> answers.txt
+  744  cat answers.txt
+  745  find -h
+  746  find --help
+  747  find -n >50
+  748  find -size n > 50
+  749  find -size n >50
+  750  find -size 50
+  751  ls
+  752  rm 50
+  753  ls
+  754  find -size +100
+  755  echo "$ find -size +100" >> answers.txt
+  756  cat answers.txt
+  757  find -size +100 >> answers.txt
+  758  cat answers.txt
+  759  man files
+  760  man "const.txt"
+  761  file const.txt
+  762  file -b const.txt
+  763  echo "$ file const.txt" >> answers.txt
+  764  cat answers.txt
+  765  file const.txt >> answers.txt
+  766  cat answer.txt
+  767  cat answers.txt
+  768  md5sum *.txt
+  769  cat answers.txt
+  770  echo "$ md5sum *.txt" >> answers.txt
+  771  cat answers.txt
+  772  md5sum *.txt >> answers.txt
+  773  cat answers.txt
+  774  du files
+  775  pwd
+  776  du pwd
+  777  du -k /files
+  778  du -k jaea//files
+  779  du -k /jaea/files
+  780  du -k /home/jaea
+  781  du -k /rsgrps/bh_class/jaea
+  782  du -k /rsgrps/bh_class/jaea/biosys-analytics
+  783  du -k /rsgrps/bh_class/jaea/biosys-analytics/assignments
+  784  du -k /rsgrps/bh_class/jaea/biosys-analytics/assignments/01-unix/files
+  785  echo $HOME
+  786  du -k ~/files
+  787  ls
+  788  du -k
+  789  du -t
+  790  du -x
+  791  du -h
+  792  du -ah
+  793  echo "$ du -ah" >> answers.txt
+  794  du -ah >> answers.txt
+  795  cat answers.txt
+  796  cd /rsgrps/bh_class/jaea/biosys-analytics/assignments/01-unix
+  797  ls
+  798  cd files
+  799  ls
+  800  grep -n "judge" *.txt
+  801  grep -c "judge" *.txt
+  802  cd /rsgrps/bh_class/jaea/biosys-analytics/assignments/01-unix/files
+  803  ls
+  804  cat answers.txt
+  805  grep -c "judge" *.txt
+  806  echo "$ grep -c "judge"" *.txt >> answers.txt
+  807  cat answers.txt
+  808  grep -c "judge" *.txt >> answers.txt
+  809  cat answers.txt
+  810  grep -l "human" *.txt
+  811  echo "grep -l 'human' *.txt"
+  812  echo "grep -l "human" *.txt"
+  813  echo "grep -l ""human"" *.txt"
+  814  echo "grep -l human *.txt"
+  815  echo "grep -l "/"human"/" *.txt"
+  816  echo "grep -l """human""" *.txt"
+  817  echo "grep -l '"human"' *.txt"
+  818  echo "grep -l '"'human'"' *.txt"
+  819  echo "grep -l human *.txt"
+  820  echo "grep -l human *.txt" >> answers.txt
+  821  cat answers.txt
+  822  echo tail answers.txt
+  823  tail answers.txt
+  824  sed '$d' answers.txt
+  825  cat answers.txt
+  826  tail answers.txt
+  827  sed "$d" answers.txt
+  828  sed "$d" answers.txt > tempanwers.txt
+  829  ls
+  830  cat tempanswers.txt
+  831  cat tempanwers.txt
+  832  wc -l tempanwers.txt
+  833  sed 's/"grep -l human *.txt"/"$ grep -l human *.txt"' tempanwers.txt
+  834  sed s/"grep -l human *.txt"/"$ grep -l human *.txt" tempanwers.txt
+  835  sed "s/"grep -l human *.txt"/"$ grep -l human *.txt"" tempanwers.txt
+  836  sed "s/grep -l human *.txt/$ grep -l human *.txt" tempanwers.txt
+  837  sed s/grep -l human *.txt/$ grep -l human *.txt tempanwers.txt tempanwers.txt
+  838  sed -i 's/grep -l human *.txt/$ grep -l human *.txt' tempanwers.txt
+  839  sed -i s/"grep -l human *.txt"/"$ grep -l human *.txt" tempanwers.txt
+  840  cat answers.txt
+  841  sed -e '$s/"grep -l human *.txt"/"$ grep -l human *.txt"' tempanwers.txt
+  842  sed -e $s/grep -l human *.txt/$ grep -l human *.txt tempanwers.txt
+  843  ls
+  844  sed -e "$s/grep -l human *.txt/$ grep -l human *.txt" tempanwers.txt
+  845  sed -i "$s/.*/$ grep -l human *.txt" tempanwers.txt
+  846  sed -i $s/.*/"$ grep -l human *.txt" tempanwers.txt
+  847  sed -i '$s/.*/"$ grep -l human *.txt"' tempanwers.txt
+  848  sed -i $s/.*/$ grep -l human *.txt tempanwers.txt
+  849  sed -i s/.*/$ grep -l human *.txt tempanwers.txt
+  850  tail -1 tempanwers.txt
+  851  cd /rsgrps/bh_class/jaea/biosys-analytics/assignments/01-unix/files
+  852  ls
+  853  cat tempanwers.txt
+  854  tail -1 tempanwers.txt
+  855  man sed
+  856  sed -i s/grep -l human *.txt/$ grep -l human *.txt/ tempanwers.txt
+  857  sed -i s/e="grep -l human *.txt"/$ grep -l human *.txt/ tempanwers.txt
+  858  sed -i s/"grep -l human *.txt"/"$ grep -l human *.txt"/ tempanwers.txt
+  859  tail tempanwers.txt
+  860  sed -i s/"grep -l human *.txt"/"$ grep -l human *.txt"/g tempanwers.txt
+  861  tail tempanwers.txt
+  862  sed -i s/"grep -l human *.txt"/"$ grep -l hun *.txt"/g tempanwers.txt
+  863  tail tempanwers.txt
+  864  sed s/"grep -l human *.txt"/"$ grep -l hun *.txt"/g tempanwers.txt
+  865  sed s/"grep -l human *.txt"/"$ grep -l hun *.txt"/ tempanwers.txt
+  866  ls
+  867  cat tempanwers.txt
+  868  sed s/"grep -l human *.txt"/"$ grep -l human *.txt"/ > tempanwers.txt
+  869  echo "hello"
+  870  echo "hello/nhello"
+  871  echo "hello'/n'hello"
+  872  echo "hello"/n"hello"
+  873  echo "hello"'/n'"hello"
+  874  echo "hello'/n'hello"
+  875  echo "hello"$'/n'"hello"
+  876  echo "hello"$'\n'"hello"
+  877  echo "hello"'\n'"hello"
+  878  cd /rsgrps/bh_class/jaea/biosys-analytics/
+  879  ls
+  880  cd assignments/unix-01/files
+  881  ls
+  882  cd assignments
+  883  ls
+  884  cd 01-unix
+  885  ls
+  886  cd files
+  887  ls
+  888  cat tempanwers.txt
+  889  cat answers.txt
+  890  ls
+  891  cat tempanwers.txt
+  892  ls -l tempanwers.txt
+  893  du -ah tempanwers.txt
+  894  rm tempanwer.txt
+  895  ls
+  896  rm tempanwers.txt
+  897  ls
+  898  cat answers.txt > hw1temp.txt
+  899  ls
+  900  cat hw1temp.txt
+  901  ls
+  902    ls
+  903  cat answers.txt
+  904  grep -l "human" *.txt >> answers.txt
+  905  cat answers.txt
+  906  cat answers.txt > hw1temp.txt
+  907  ls
+  908  cat hw1temp.txt
+  909  grep -v "hw1temp.txt" answers.txt > hw1temp.txt; mv hw1temp.txt answers.txt
+  910  cat answers.txt
+  911  grep -l "human" *.txt
+  912  grep -c "human" *.txt
+  913  grep -w "scarlet" scarlet.txt
+  914  grep -c "scarlet" scarlet.txt
+  915  grep -e "scarlet" scarlet.txt
+  916  ls
+  917  cat answers.txt
+  918  tail -4
+  919  cd /rsgrps/bh_class/jaea/assignments/01-unix/files
+  920  cd /rsgrps/bh_class/jaea/assignments/01-unix
+  921  cd /rsgrps/bh_class/jaea/assignments
+  922  cd /rsgrps/bh_class/jaea/
+  923  ls
+  924  cd biosys-analytics/assignments/ 01-unix
+  925  ls
+  926  cd 01-unix
+  927  ls
+  928  cd files
+  929  ls
+  930  cat answers.txt
+  931  tail -4 answers.txt
+  932  grep -e "scarlet" scarlet.txt
+  933  wc -w "scarlet" scarlet.txt
+  934  cat hw1temp.txt
+  935  ls
+  936  cat answers.txt > hw1temp.txt
+  937  ls
+  938  cat hw1temp.txt
+  939  ls
+  940  cd ..
+  941  ls
+  942  mkdir hw1temp
+  943  ls
+  944  cd files
+  945  ls
+  946  cat answers.txt > ~/hw1temp/hw1temp.txt
+  947  cat hw1temp.txt
+  948  tail -4 hw1temp.txt
+  949  ls
+  950  echo "$ wc -w "scarlet" scarlet.txt" >> hw1temp.txt
+  951  ls
+  952  cat hw1temp.txt
+  953  awk '{sub(/grep -l human *.txt/,"$ grep -l human *.txt")}' hw1temp.txt
+  954  cat hw1temp.txt
+  955  awk '{sub(/grep -l human *.txt/,"\$ grep -l human *.txt")}' hw1temp.txt
+  956  cat hw1temp.txt
+  957  awk '{sub(/grep -l human *.txt/,"`$ grep -l human *.txt")}' hw1temp.txt
+  958  cat hw1temp.txt
+  959  echo PATH
+  960  echo $PATH
+  961  awk '{gsub(/grep -l human *.txt/,"'$' grep -l human *.txt")}' hw1temp.txt
+  962  cat hw1temp.txt
+  963  awk '{gsub(/grep -l human *.txt/,"`$` grep -l human *.txt")}' hw1temp.txt
+  964  cat hw1temp.txt
+  965  awk '{gsub(/grep -l human *.txt/," grep -l \"human\" *.txt")}' hw1temp.txt
+  966  cat hw1temp.txt
+  967  echo "s\"R"\"
+  968  awk '{gsub(/grep -l human *.txt/," grep -l \"human"\ *.txt")}' hw1temp.txt
+  969  awk '{gsub(/grep -l human *.txt/," grep -l \"human" *.txt")}' hw1temp.txt
+  970  awk '{gsub(/grep -l human *.txt/," grep -l "\"human"\" *.txt")}' hw1temp.txt
+  971  cat hw1temp.txt
+  972  wc -w "scarlet" scarlet.txt >> hw1temp.txt
+  973  ls
+  974  wc -w "scarlet" scarlet.txt >> hw1temp.txt
+  975  ls -l 
+  976  wc -w "scarlet" scarlet.txt
+  977  cd /rsgrps/bh_class/jaea/biosys-analytics/assignments/01-unix
+  978  ls
+  979  rmdir hw1temp
+  980  ls
+  981  cd files
+  982  ls
+  983  cat hw1temp.txt
+  984  sed $d hw1temp.txt
+  985  sed '$d' hw1temp.txt
+  986  cat hw1temp.txt
+  987  sed '$d' hw1temp.txt
+  988  cat hw1temp.txt
+  989  sed '$d' hw1temp.txt
+  990  cd..
+  991  cd ..
+  992  ls
+  993  files
+  994  cd files
+  995  ls
+  996  cat hw1temp.txt
+  997  sed '$d' hw1temp.txt >> hw1temp.txt
+  998  cat hw1temp.txt
+  999  sed '$d' hw1temp.txt >> hw1temp.txt
+ 1000  cat hw1temp.txt
+ 1001  cd /rsgrps/bh_class/jaea/biosys-analytics/assignments
+ 1002  ls
+ 1003  cd 01-unix/
+ 1004  ls
+ 1005  cd files
+ 1006  ls
+ 1007  cat hw1temp.txt
+ 1008  ls
+ 1009  echo "s\"R"\"
+ 1010  echo "$ Why is it more or less?"$'\n'"CTRL-D"
+ 1011  echo "$ Why is it more or less?"$'\n'"CTRL-D is appended at the end of each file's first 15 lines in addition to two newline after the first and second file execution of the command head"
+ 1012  echo "$ Why is it more or less?"$'\n'"CTRL-D is appended at the end of each file's first 15 lines.  In addition, two newline after the first and second file execution of the command head"
+ 1013  echo "$ Why is it more or less?"$'\n'"CTRL-D is appended at the end of the first 15 lines for each file.  In addition, two newline characters appear to be counted regarding the given wc -l command"
+ 1014  echo "$ Why is it more or less?"$'\n'"CTRL-D is appended to the end of the first 15 lines for each file.  In addition, two newline characters are also counted with the given wc -l command."
+ 1015  echo "$ Why is it more or less?"$'\n'"CTRL-D is appended to the end of the first 15 lines for each file.  In addition, two newline characters are also counted with the given wc -l command." >> hw1temp.txt
+ 1016  cat hw1temp.txt 
+ 1017  cat hw1temp.txt > answers.txt
+ 1018  cat answers.txt
+ 1019  ls
+ 1020  echo "$ rm foo.txt"
+ 1021  echo "$ rm foo.txt" >> hw1temp.txt
+ 1022  cat hw1temp.txt 
+ 1023  rm foo.txt
+ 1024  ls
+ 1025  cat hw1temp.txt > answers.txt
+ 1026  history > cmds

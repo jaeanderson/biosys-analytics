@@ -1,0 +1,44 @@
+$ ls -l
+total 584
+-rw-r--r-- 1 jaea bh_class      8 Jan 20 21:18 answers.txt
+-rw-r--r-- 1 jaea bh_class  45119 Jan 18 11:58 const.txt
+-rw-r--r-- 1 jaea bh_class 525464 Jan 23  2015 scarlet.txt
+-rw-r--r-- 1 jaea bh_class   8685 Jan 18 11:58 usdeclar.txt
+$ wc -l *.txt
+     7 answers.txt
+   872 const.txt
+  9120 scarlet.txt
+   176 usdeclar.txt
+ 10175 total
+$ find -size +100
+./scarlet.txt
+$ file const.txt
+const.txt: ASCII English text
+$ md5sum *.txt
+652c834eec19a4ad85a78b6299fa8c56  answers.txt
+f66a8165c621d48bac2216b2f31e8742  const.txt
+4958553be1483e4cbd615ce5fa73f6ab  scarlet.txt
+7f54939b30ae7b6d45d473a4c82a41b0  usdeclar.txt
+$ du -ah
+520K	./scarlet.txt
+48K	./const.txt
+0	./answers.txt
+16K	./usdeclar.txt
+584K	.
+$ grep -c judge answers.txt const.txt scarlet.txt usdeclar.txt
+answers.txt:1
+const.txt:1
+scarlet.txt:15
+usdeclar.txt:1
+$ grep -l human const.txt scarlet.txt usdeclar.txt
+scarlet.txt
+usdeclar.txt
+$ wc -w scarlet scarlet.txt
+ 86895 scarlet.txt
+ 86895 total
+$ head -n 15 const.txt scarlet.txt usdeclar.txt > foo.txt
+$ wc -l foo.txt
+50 foo.txt
+$ Why is it more or less?
+CTRL-D is appended to the end of the first 15 lines for each file.  In addition, two newline characters are also counted with the given wc -l command.
+$ rm foo.txt
