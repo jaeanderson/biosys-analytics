@@ -1,0 +1,18 @@
+$ find . ( -name /s*/ -o -name c* -type f ) -exec wc -w {} ;
+86895 ./scarlet.txt
+7652 ./const.txt
+$ grep -cx \s* const.txt
+169
+$ grep '^Article\s[0-9]' const.txt scarlet.txt usdeclar.txt | wc -l
+7
+$ grep -i -o '^[aeiou]' scarlet.txt | LC_ALL=C sort | uniq -c 
+     59 A
+     10 E
+     88 I
+     20 O
+      6 U
+    633 a
+    199 e
+    348 i
+    358 o
+     80 u

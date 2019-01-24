@@ -1,0 +1,1000 @@
+  358  git pull upstream master
+  359  ls
+  360  cd assignments
+  361  ls
+  362  cd 01-unix-grad
+  363  ls
+  364  cat README.md
+  365  cd ..
+  366  ls
+  367  cd 01-unix
+  368  ls
+  369  cd files
+  370  ls
+  371  help wget
+  372  help 'wget'
+  373  help
+  374  wget https://www.constitution.org/usdeclar.txt
+  375  ls
+  376  wget https://www.usconstitution.net/const.txt
+  377  ls
+  378  wget https://www.gutenberg.org/files/25344/25344-0.txt > scarlet.txt
+  379  ls
+  380  cat scarlet.txt
+  381  cat 25344-0.txt
+  382  ls
+  383  ls -h
+  384  ls -l
+  385  rm 25344-0.txt
+  386  ls
+  387  rm scarlet.txt
+  388  ls
+  389  wget https://www.gutenberg.org/files/25344/25344-0.txt >> scarlet.txt
+  390  ls
+  391  ls -l
+  392  rm scarlet.txt
+  393  rm 25344-0.txt
+  394  ls -l
+  395  wget https://www.gutenberg.org/files/25344/25344-0.txt < scarlet.txt
+  396  wget https://www.gutenberg.org/files/25344/25344-0.txt >< scarlet.txt
+  397  wget https://www.gutenberg.org/files/25344/25344-0.txt > | < scarlet.txt
+  398  wget https://www.gutenberg.org/files/25344/25344-0.txt > scarlet.txt <
+  399  ls
+  400  wget -O scarlet.txt https://www.gutenberg.org/files/25344/25344-0.txt
+  401  ls
+  402  ls -l
+  403  cat scarlet.txt
+  404  cd ..
+  405  ls
+  406  cd ..
+  407  ls
+  408  head 01-unix
+  409  cd 01-unix
+  410  ls
+  411  head README.md
+  412  cat README.md
+  413  find -h
+  414  find --help
+  415  ls
+  416  cd files
+  417  ls
+  418  wc -l const.txt
+  419  wc -l scarlet.txt
+  420  wc -l usdeclar.txt
+  421  wc -l const.txt | bc
+  422  FILE_1 = wc -l const.txt
+  423  F1 = wc -l const.txt
+  424  wc -l scarlet.txt
+  425  wc -l usdeclar.txt
+  426  LS
+  427  ls
+  428  cat >> answers.txt
+  429  ls
+  430  cd /rsgrps/bh_class/jaea
+  431  ls
+  432  cd biosys-analytics
+  433  ls
+  434  cd assignments
+  435  ls
+  436  cd 01-unix
+  437  ls
+  438  cd files
+  439  ls
+  440  ls -l
+  441  head answers.txt
+  442  cd /rsgrps/bh_class/jaea
+  443  ls
+  444  cd biosys-analytics
+  445  ls
+  446  cd assignments
+  447  ls
+  448  cd 01-unix
+  449  ls
+  450  cd files
+  451  ls
+  452  ls -l
+  453  ls -l > answers.txt
+  454  ls
+  455  ls -l
+  456  head answers.txt
+  457  ls
+  458  head answers.txt
+  459  rm answers.txt
+  460  ls
+  461  echo "ls -l" >> answers.txt
+  462  ls
+  463  ls -l
+  464  head answers.txt
+  465  ls -l >> answers.txt
+  466  ls
+  467  ls -l
+  468  ls
+  469  head answers.txt
+  470  rm answers.txt
+  471  ls
+  472  echo "$ls -l" >> answers.txt
+  473  head answers.txt
+  474  ls
+  475  rm answers.txt
+  476  ls
+  477  echo "$ls -l" > answers.txt
+  478  head answers.txt
+  479  pwd
+  480  rm answers.txt
+  481  echo "$ ls -l" > answers.txt
+  482  head answers.txt
+  483  ls -l >> answers.txt
+  484  head answers.txt
+  485  wc -l *.txt
+  486  echo "$ wc -l *.txt" >> answers.txt
+  487  ls
+  488   head answers.txt
+  489  cat answers.txt
+  490  wc -l *.txt >> answers.txt
+  491  cat answers.txt
+  492  find -h
+  493  find --help
+  494  find -n >50
+  495  find -size n > 50
+  496  find -size n >50
+  497  find -size 50
+  498  ls
+  499  rm 50
+  500  ls
+  501  find -size +100
+  502  echo "$ find -size +100" >> answers.txt
+  503  cat answers.txt
+  504  find -size +100 >> answers.txt
+  505  cat answers.txt
+  506  man files
+  507  man "const.txt"
+  508  file const.txt
+  509  file -b const.txt
+  510  echo "$ file const.txt" >> answers.txt
+  511  cat answers.txt
+  512  file const.txt >> answers.txt
+  513  cat answer.txt
+  514  cat answers.txt
+  515  md5sum *.txt
+  516  cat answers.txt
+  517  echo "$ md5sum *.txt" >> answers.txt
+  518  cat answers.txt
+  519  md5sum *.txt >> answers.txt
+  520  cat answers.txt
+  521  du files
+  522  pwd
+  523  du pwd
+  524  du -k /files
+  525  du -k jaea//files
+  526  du -k /jaea/files
+  527  du -k /home/jaea
+  528  du -k /rsgrps/bh_class/jaea
+  529  du -k /rsgrps/bh_class/jaea/biosys-analytics
+  530  du -k /rsgrps/bh_class/jaea/biosys-analytics/assignments
+  531  du -k /rsgrps/bh_class/jaea/biosys-analytics/assignments/01-unix/files
+  532  echo $HOME
+  533  du -k ~/files
+  534  ls
+  535  du -k
+  536  du -t
+  537  du -x
+  538  du -h
+  539  du -ah
+  540  echo "$ du -ah" >> answers.txt
+  541  du -ah >> answers.txt
+  542  cat answers.txt
+  543  cd /rsgrps/bh_class/jaea/biosys-analytics/assignments/01-unix
+  544  ls
+  545  cd files
+  546  ls
+  547  grep -n "judge" *.txt
+  548  grep -c "judge" *.txt
+  549  cd /rsgrps/bh_class/jaea/biosys-analytics/assignments/01-unix/files
+  550  ls
+  551  cat answers.txt
+  552  grep -c "judge" *.txt
+  553  echo "$ grep -c "judge"" *.txt >> answers.txt
+  554  cat answers.txt
+  555  grep -c "judge" *.txt >> answers.txt
+  556  cat answers.txt
+  557  grep -l "human" *.txt
+  558  echo "grep -l 'human' *.txt"
+  559  echo "grep -l "human" *.txt"
+  560  echo "grep -l ""human"" *.txt"
+  561  echo "grep -l human *.txt"
+  562  echo "grep -l "/"human"/" *.txt"
+  563  echo "grep -l """human""" *.txt"
+  564  echo "grep -l '"human"' *.txt"
+  565  echo "grep -l '"'human'"' *.txt"
+  566  echo "grep -l human *.txt"
+  567  echo "grep -l human *.txt" >> answers.txt
+  568  cat answers.txt
+  569  echo tail answers.txt
+  570  tail answers.txt
+  571  sed '$d' answers.txt
+  572  cat answers.txt
+  573  tail answers.txt
+  574  sed "$d" answers.txt
+  575  sed "$d" answers.txt > tempanwers.txt
+  576  ls
+  577  cat tempanswers.txt
+  578  cat tempanwers.txt
+  579  wc -l tempanwers.txt
+  580  sed 's/"grep -l human *.txt"/"$ grep -l human *.txt"' tempanwers.txt
+  581  sed s/"grep -l human *.txt"/"$ grep -l human *.txt" tempanwers.txt
+  582  sed "s/"grep -l human *.txt"/"$ grep -l human *.txt"" tempanwers.txt
+  583  sed "s/grep -l human *.txt/$ grep -l human *.txt" tempanwers.txt
+  584  sed s/grep -l human *.txt/$ grep -l human *.txt tempanwers.txt tempanwers.txt
+  585  sed -i 's/grep -l human *.txt/$ grep -l human *.txt' tempanwers.txt
+  586  sed -i s/"grep -l human *.txt"/"$ grep -l human *.txt" tempanwers.txt
+  587  cat answers.txt
+  588  sed -e '$s/"grep -l human *.txt"/"$ grep -l human *.txt"' tempanwers.txt
+  589  sed -e $s/grep -l human *.txt/$ grep -l human *.txt tempanwers.txt
+  590  ls
+  591  sed -e "$s/grep -l human *.txt/$ grep -l human *.txt" tempanwers.txt
+  592  sed -i "$s/.*/$ grep -l human *.txt" tempanwers.txt
+  593  sed -i $s/.*/"$ grep -l human *.txt" tempanwers.txt
+  594  sed -i '$s/.*/"$ grep -l human *.txt"' tempanwers.txt
+  595  sed -i $s/.*/$ grep -l human *.txt tempanwers.txt
+  596  sed -i s/.*/$ grep -l human *.txt tempanwers.txt
+  597  tail -1 tempanwers.txt
+  598  cd /rsgrps/bh_class/jaea/biosys-analytics/assignments/01-unix/files
+  599  ls
+  600  cat tempanwers.txt
+  601  tail -1 tempanwers.txt
+  602  man sed
+  603  sed -i s/grep -l human *.txt/$ grep -l human *.txt/ tempanwers.txt
+  604  sed -i s/e="grep -l human *.txt"/$ grep -l human *.txt/ tempanwers.txt
+  605  sed -i s/"grep -l human *.txt"/"$ grep -l human *.txt"/ tempanwers.txt
+  606  tail tempanwers.txt
+  607  sed -i s/"grep -l human *.txt"/"$ grep -l human *.txt"/g tempanwers.txt
+  608  tail tempanwers.txt
+  609  sed -i s/"grep -l human *.txt"/"$ grep -l hun *.txt"/g tempanwers.txt
+  610  tail tempanwers.txt
+  611  sed s/"grep -l human *.txt"/"$ grep -l hun *.txt"/g tempanwers.txt
+  612  sed s/"grep -l human *.txt"/"$ grep -l hun *.txt"/ tempanwers.txt
+  613  ls
+  614  cat tempanwers.txt
+  615  sed s/"grep -l human *.txt"/"$ grep -l human *.txt"/ > tempanwers.txt
+  616  echo "hello"
+  617  echo "hello/nhello"
+  618  echo "hello'/n'hello"
+  619  echo "hello"/n"hello"
+  620  echo "hello"'/n'"hello"
+  621  echo "hello'/n'hello"
+  622  echo "hello"$'/n'"hello"
+  623  echo "hello"$'\n'"hello"
+  624  echo "hello"'\n'"hello"
+  625  cd /rsgrps/bh_class/jaea/biosys-analytics/
+  626  ls
+  627  cd assignments/unix-01/files
+  628  ls
+  629  cd assignments
+  630  ls
+  631  cd 01-unix
+  632  ls
+  633  cd files
+  634  ls
+  635  cat tempanwers.txt
+  636  cat answers.txt
+  637  ls
+  638  cat tempanwers.txt
+  639  ls -l tempanwers.txt
+  640  du -ah tempanwers.txt
+  641  rm tempanwer.txt
+  642  ls
+  643  rm tempanwers.txt
+  644  ls
+  645  cat answers.txt > hw1temp.txt
+  646  ls
+  647  cat hw1temp.txt
+  648  ls
+  649    ls
+  650  cat answers.txt
+  651  grep -l "human" *.txt >> answers.txt
+  652  cat answers.txt
+  653  cat answers.txt > hw1temp.txt
+  654  ls
+  655  cat hw1temp.txt
+  656  grep -v "hw1temp.txt" answers.txt > hw1temp.txt; mv hw1temp.txt answers.txt
+  657  cat answers.txt
+  658  grep -l "human" *.txt
+  659  grep -c "human" *.txt
+  660  grep -w "scarlet" scarlet.txt
+  661  grep -c "scarlet" scarlet.txt
+  662  grep -e "scarlet" scarlet.txt
+  663  ls
+  664  cat answers.txt
+  665  tail -4
+  666  cd /rsgrps/bh_class/jaea/assignments/01-unix/files
+  667  cd /rsgrps/bh_class/jaea/assignments/01-unix
+  668  cd /rsgrps/bh_class/jaea/assignments
+  669  cd /rsgrps/bh_class/jaea/
+  670  ls
+  671  cd biosys-analytics/assignments/ 01-unix
+  672  ls
+  673  cd 01-unix
+  674  ls
+  675  cd files
+  676  ls
+  677  cat answers.txt
+  678  tail -4 answers.txt
+  679  grep -e "scarlet" scarlet.txt
+  680  wc -w "scarlet" scarlet.txt
+  681  cat hw1temp.txt
+  682  ls
+  683  cat answers.txt > hw1temp.txt
+  684  ls
+  685  cat hw1temp.txt
+  686  ls
+  687  cd ..
+  688  ls
+  689  mkdir hw1temp
+  690  ls
+  691  cd files
+  692  ls
+  693  cat answers.txt > ~/hw1temp/hw1temp.txt
+  694  cat hw1temp.txt
+  695  tail -4 hw1temp.txt
+  696  ls
+  697  echo "$ wc -w "scarlet" scarlet.txt" >> hw1temp.txt
+  698  ls
+  699  cat hw1temp.txt
+  700  awk '{sub(/grep -l human *.txt/,"$ grep -l human *.txt")}' hw1temp.txt
+  701  cat hw1temp.txt
+  702  awk '{sub(/grep -l human *.txt/,"\$ grep -l human *.txt")}' hw1temp.txt
+  703  cat hw1temp.txt
+  704  awk '{sub(/grep -l human *.txt/,"`$ grep -l human *.txt")}' hw1temp.txt
+  705  cat hw1temp.txt
+  706  echo PATH
+  707  echo $PATH
+  708  awk '{gsub(/grep -l human *.txt/,"'$' grep -l human *.txt")}' hw1temp.txt
+  709  cat hw1temp.txt
+  710  awk '{gsub(/grep -l human *.txt/,"`$` grep -l human *.txt")}' hw1temp.txt
+  711  cat hw1temp.txt
+  712  awk '{gsub(/grep -l human *.txt/," grep -l \"human\" *.txt")}' hw1temp.txt
+  713  cat hw1temp.txt
+  714  echo "s\"R"\"
+  715  awk '{gsub(/grep -l human *.txt/," grep -l \"human"\ *.txt")}' hw1temp.txt
+  716  awk '{gsub(/grep -l human *.txt/," grep -l \"human" *.txt")}' hw1temp.txt
+  717  awk '{gsub(/grep -l human *.txt/," grep -l "\"human"\" *.txt")}' hw1temp.txt
+  718  cat hw1temp.txt
+  719  wc -w "scarlet" scarlet.txt >> hw1temp.txt
+  720  ls
+  721  wc -w "scarlet" scarlet.txt >> hw1temp.txt
+  722  ls -l 
+  723  wc -w "scarlet" scarlet.txt
+  724  cd /rsgrps/bh_class/jaea/biosys-analytics/assignments/01-unix
+  725  ls
+  726  rmdir hw1temp
+  727  ls
+  728  cd files
+  729  ls
+  730  cat hw1temp.txt
+  731  sed $d hw1temp.txt
+  732  sed '$d' hw1temp.txt
+  733  cat hw1temp.txt
+  734  sed '$d' hw1temp.txt
+  735  cat hw1temp.txt
+  736  sed '$d' hw1temp.txt
+  737  cd..
+  738  cd ..
+  739  ls
+  740  files
+  741  cd files
+  742  ls
+  743  cat hw1temp.txt
+  744  sed '$d' hw1temp.txt >> hw1temp.txt
+  745  cat hw1temp.txt
+  746  sed '$d' hw1temp.txt >> hw1temp.txt
+  747  cat hw1temp.txt
+  748  cd /rsgrps/bh_class/jaea/biosys-analytics/assignments
+  749  ls
+  750  cd 01-unix/files
+  751  ls
+  752  head -n 15 *.txt
+  753  ls
+  754  head -n 15 const.txt scarlet.txt usdeclar.txt
+  755  head -n 15 const.txt scarlet.txt usdeclar.txt > foo.txt
+  756  ls
+  757  cat foo.txt
+  758  wc -l foo.txt
+  759  echo "$ head -n 15 const.txt scarlet.txt usdeclar.txt"
+  760  echo "$ head -n 15 const.txt scarlet.txt usdeclar.txt" >> hw1temp.txt
+  761  cat hw1temp.txt
+  762  sed '$d' hw1temp.txt > hw1temp.txt
+  763  cat hw1temp.txt
+  764  ls
+  765  cat answers.txt
+  766  cat hw1temp.txt
+  767  answers.txt >> hw1temp.txt
+  768  cat answers.txt >> hw1temp.txt
+  769  cat hw1temp.txt
+  770  cat answers.txt
+  771  cat hw1temp.txt
+  772  sed '$d' hw1temp.txt
+  773  sed '$d' hw1temp.txt >> hw1temp.txt
+  774  cat hw1temp.txt
+  775  sed '$d' hw1temp.txt >> hw1temp.txt
+  776  cat hw1temp.txt
+  777  sed '$d' hw1temp.txt >> hw1temp.txt
+  778  cat hw1temp.txt
+  779  sed '$d' hw1temp.txt >> hw1temp.txt
+  780  cat hw1temp.txt
+  781  echo "$ grep -l human *.txt" >> hw1temp.txt
+  782  cat hw1temp.txt
+  783  grep -l "human" *.txt
+  784  cat hw1temp.txt
+  785  wc -l hw1temp.txt
+  786  cat answers.txt
+  787  cat hw1temp.txt
+  788  cat answers.txt
+  789  cat hw1temp.txt
+  790  grep -l "human" *.txt
+  791  ls
+  792  grep -l "human" const.txt scarlet.txt usdeclar.txt
+  793  cat hw1temp.txt
+  794  sed '$d' hw1temp.txt >> hw1temp.txt
+  795  cat hw1temp.txt
+  796  grep -l "human" const.txt scarlet.txt usdeclar.txt
+  797  cat answers.txt
+  798  cat answers.txt > hw1temp.txt
+  799  cat hw1temp.txt
+  800  sed '$d' hw1temp.txt > hw1temp.txt
+  801  cat hw1temp.txt
+  802  sed '$d' hw1temp.txt > hw1temp.txt
+  803  cat hw1temp.txt
+  804  cat answers.txt
+  805  cat answers.txt > hw1temp.txt
+  806  cat hw1temp.txt
+  807  sed '$d' hw1temp.txt > hw1temp.txt
+  808  cat hw1temp.txt
+  809  ls -l
+  810  cat answers.txt > hw1temp.txt
+  811  ls -l
+  812  sed '$d' hw1temp.txt >> hw1temp.txt
+  813  ls -l
+  814  cat answers.txt > hw1temp.txt
+  815  ls -l
+  816  sed -i '$d' hw1temp.txt
+  817  ls -l
+  818  cat hw1temp.txt
+  819  sed -i '$d' hw1temp.txt
+  820  cat hw1temp.txt
+  821  sed -i '$d' hw1temp.txt
+  822  cat hw1temp.txt
+  823  sed -i '$d' hw1temp.txt
+  824  cat hw1temp.txt
+  825  ls
+  826  echo "$ grep -l human const.txt scarlet.txt usdeclar.txt"
+  827  grep -l human const.txt scarlet.txt usdeclar.txt
+  828  grep -l "human" const.txt scarlet.txt usdeclar.txt
+  829  echo "$ grep -l human const.txt scarlet.txt usdeclar.txt" >> hw1temp.txt
+  830  ls
+  831  cat hw1temp.txt
+  832  grep -l human const.txt scarlet.txt usdeclar.txt >> hw1temp.txt
+  833  cat hw1temp.txt
+  834  cat hw1temp.txt > answers.txt
+  835  cat answers.txt
+  836  wc -w "scarlet" scarlet.txt
+  837  cat hw1temp.txt
+  838  echo "$ wc -w scarlet scarlet.txt"
+  839  echo "$ wc -w scarlet scarlet.txt" >> hw1temp.txt
+  840  cat hw1temp.txt
+  841  ls -l
+  842  wc -w "scarlet" scarlet.txt
+  843  wc -w scarlet scarlet.txt
+  844  wc -w scarlet scarlet.txt >> hw1temp.txt
+  845  cat hw1temp.txt
+  846  cat hw1temp.txt > answers.txt
+  847  cat answers.txt
+  848  head -n 15 const.txt scarlet.txt usdeclar.txt
+  849  wc -l foo.txt
+  850  cat hw1temp.txt
+  851  echo "$ head -n 15 const.txt scarlet.txt usdeclar.txt"
+  852  echo "$ head -n 15 const.txt scarlet.txt usdeclar.txt" >> hw1temp.txt
+  853  cat hw1temp.txt
+  854  head -n 15 const.txt scarlet.txt usdeclar.txt >> hw1temp.txt
+  855  cat hw1temp.txt
+  856  cat answers.txt
+  857  cat answers.txt > hw1temp.txt
+  858  cat hw1temp.txt
+  859  echo "$ head -n 15 const.txt scarlet.txt usdeclar.txt >> foo.txt"
+  860  echo "$ head -n 15 const.txt scarlet.txt usdeclar.txt >> foo.txt" >> hw1temp.txt
+  861  cat hw1temp.txt
+  862  sed -i '$d' hw1temp.txt
+  863  cat hw1temp.txt
+  864  echo "$ head -n 15 const.txt scarlet.txt usdeclar.txt > foo.txt" >> hw1temp.txt
+  865  cat hw1temp.txt
+  866  wc -l foo.txt
+  867  cat hw1temp.txt
+  868  head -n 15 const.txt scarlet.txt usdeclar.txt > foo.txt
+  869  cat foo.txt
+  870  wc -l foo.txt
+  871  echo "$ wc -l foo.txt" >> hw1temp.txt
+  872  wc -l foo.txt
+  873  echo "$ wc -l foo.txt" >> hw1temp.txt
+  874  cat hw1temp.txt
+  875  wc -l foo.txt
+  876  wc -l foo.txt >> hw1temp.txt
+  877  cat hw1temp.txt
+  878  cat hw1temp.txt > answers.txt
+  879  cat answers.txt
+  880  ls -l
+  881  cat foo.txt
+  882  echo "Why is it more or less?"
+  883  cat hw1temp.txt
+  884  echo "$ Why is it more or less?"
+  885  cat hw1temp.txt
+  886  echo "$ Why is it more or less?\nCTRL-D"
+  887  echo "$ Why is it more or less?"\n"CTRL-D"
+  888  echo "$ Why is it more or less?\n CTRL-D"
+  889  echo "$ Why is it more or less?/nCTRL-D"
+  890  echo "$ Why is it more or less?"/n"CTRL-D"
+  891  echo "$ Why is it more or less?'/n'CTRL-D"
+  892  echo "$ Why is it more or less?$'/n'CTRL-D"
+  893  echo "$ Why is it more or less?"$'/n'"CTRL-D"
+  894  echo "$ Why is it more or less?"$/n"CTRL-D"
+  895  echo "$ Why is it more or less?"/n"CTRL-D"
+  896  echo "$ Why is it more or less?"./n."CTRL-D"
+  897  echo "$ Why is it more or less?".\n."CTRL-D"
+  898  echo "$ Why is it more or less?"\n"CTRL-D"
+  899  echo "$ Why is it more or less?".\n"CTRL-D"
+  900  echo "$ Why is it more or less?".\n."CTRL-D"
+  901  echo "$ Why is it more or less?"$'\n'"CTRL-D"
+  902  cd /rsgrps/bh_class/jaea/biosys-analytics/assignments
+  903  ls
+  904  cd 01-unix/
+  905  ls
+  906  cd files
+  907  ls
+  908  cat hw1temp.txt
+  909  ls
+  910  echo "s\"R"\"
+  911  echo "$ Why is it more or less?"$'\n'"CTRL-D"
+  912  echo "$ Why is it more or less?"$'\n'"CTRL-D is appended at the end of each file's first 15 lines in addition to two newline after the first and second file execution of the command head"
+  913  echo "$ Why is it more or less?"$'\n'"CTRL-D is appended at the end of each file's first 15 lines.  In addition, two newline after the first and second file execution of the command head"
+  914  echo "$ Why is it more or less?"$'\n'"CTRL-D is appended at the end of the first 15 lines for each file.  In addition, two newline characters appear to be counted regarding the given wc -l command"
+  915  echo "$ Why is it more or less?"$'\n'"CTRL-D is appended to the end of the first 15 lines for each file.  In addition, two newline characters are also counted with the given wc -l command."
+  916  echo "$ Why is it more or less?"$'\n'"CTRL-D is appended to the end of the first 15 lines for each file.  In addition, two newline characters are also counted with the given wc -l command." >> hw1temp.txt
+  917  cat hw1temp.txt 
+  918  cat hw1temp.txt > answers.txt
+  919  cat answers.txt
+  920  ls
+  921  echo "$ rm foo.txt"
+  922  echo "$ rm foo.txt" >> hw1temp.txt
+  923  cat hw1temp.txt 
+  924  rm foo.txt
+  925  ls
+  926  cat hw1temp.txt > answers.txt
+  927  history > cmds
+  928  ls
+  929  cat answers.txt
+  930  ls
+  931  ls -l 
+  932  rm hw1temp.txt
+  933  ls
+  934  cat cmds
+  935  ls
+  936  cat answers.txt
+  937  git add -A files
+  938  ls
+  939  pwd
+  940  git add -A /rsgrps/bh_class/jaea/biosys-analytics/assignments/01-unix/files
+  941  git commit
+  942  cd /rsgrps/bh_class/jaea/biosys-analytics/assignments/01-unix/files
+  943  ls
+  944  git add -A /rsgrps/bh_class/jaea/biosys-analytics/assignments/01-unix/files
+  945  git commit -m 'all done' /rsgrps/bh_class/jaea/biosys-analytics/assignments/01-unix/files
+  946  git push
+  947  cd/rsgrps/bh_class/jaea
+  948  cd /rsgrps/bh_class/jaea
+  949  ls
+  950  cd /rsgrps/bh_class/jaea/biosys-analytics/
+  951  ls
+  952  cd assignments
+  953  ls
+  954  cd 01-unix-grad
+  955  ls
+  956  cd ..
+  957  ls
+  958  cd 01-unix
+  959  ls
+  960  ls -l
+  961  cd ..
+  962  ls
+  963  cd 01-unix-grad
+  964  ls
+  965  mkdir files
+  966  ls
+  967  pwd
+  968  cp /rsgrps/bh_class/jaea/biosys-analytics/assignments/01-unix/files/*.txt /rsgrps/bh_class/jaea/biosys-analytics/assignments/01-unix-grad/files
+  969  ls
+  970  cd files
+  971  cd ..
+  972  cd 01-unix
+  973  ls
+  974  cd files
+  975  ls
+  976  cd ..
+  977  cd 01-unix-grad
+  978  ls
+  979  cd files
+  980  ls
+  981  grep -n "c" const.txt
+  982  grep -w "c" const.txt
+  983  grep -w "c*" const.txt
+  984  grep -w "c*" const.txt | wc -c "c"
+  985  grep -w "c*" const.txt | wc -w
+  986  grep -i "c*" const.txt | wc -w
+  987  grep -i "c*" const.txt
+  988  find -name "c*" const.txt
+  989  ls
+  990  grep -i "c*" const.txt
+  991  grep -E "\bc" const.txt
+  992  grep -E "\bc" const.txt | wc -w
+  993  grep -E '\bc' const.txt
+  994  grep -c '\bc' const.txt
+  995  grep -c 'c*' const.txt
+  996  grep --color 'c*' const.txt
+  997  grep --color '\bc' const.txt
+  998  grep -c --color '\bc' const.txt
+  999  exit
+ 1000  ocelote
+ 1001  ls
+ 1002  cd /rsgrps/bh_class/jaea/biosys-analytics
+ 1003  ls
+ 1004  cd assignments
+ 1005  cd 01-unix-grad
+ 1006  ls
+ 1007  cd files
+ 1008  ls
+ 1009  grep -c --color '\bc' const.txt
+ 1010  grep --color '\bc' const.txt
+ 1011  grep -c --color '\bc' const.txt
+ 1012  grep --color '\bc' '\bs' const.txt
+ 1013  ls
+ 1014  grep --color '\bc' && '\bs' const.txt
+ 1015  grep --color '\bc' || '\bs' const.txt
+ 1016  grep --color '\bc\|\bs' const.txt
+ 1017  grep -c --color '\bc\|\bs' const.txt
+ 1018  grep -c --color '\bc\|\bs' const.txt scarlet.txt declar.txt
+ 1019  ls
+ 1020  grep -c --color '\bc\|\bs' const.txt scarlet.txt usdeclar.txt
+ 1021  ls
+ 1022  cat answers.txt > hw1temp.txt
+ 1023  ls
+ 1024  rm answers.txt
+ 1025  ls
+ 1026  echo "$ grep -c '\bc\|\bs' const.txt scarlet.txt declar.txt" > answers.txt
+ 1027  ls
+ 1028  cat answers.txt
+ 1029  grep -c '\bc\|\bs' const.txt scarlet.txt usdeclar.txt
+ 1030  grep -c '\bc\|\bs' const.txt scarlet.txt usdeclar.txt >> answers.txt
+ 1031  cat answers.txt
+ 1032  cat answers.txt >> hw1temp.txt
+ 1033  cat hw1temp.txt
+ 1034  grep -c --color '\bc\|\bs' const.txt scarlet.txt usdeclar.txt
+ 1035  grep --color '\bc\|\bs' const.txt
+ 1036  grep -i --color '\bc\|\bs' const.txt
+ 1037  grep -i --color '\bc\|\bs' const.txt | wc -w
+ 1038  grep -i -c --color '\bc\|\bs' const.txt
+ 1039  grep -i -n -c --color '\bc\|\bs' const.txt
+ 1040  grep -i -n --color '\bc\|\bs' const.txt
+ 1041  grep -i -n --color '\bc/|\bs' const.txt
+ 1042  grep -i -n --color '\bc\|\bs' const.txt
+ 1043  grep -i -n --color '\bc\|\bs' const.txt | wc -w
+ 1044  grep -i -n --color '\bc\|\bs' const.txt
+ 1045  grep -i -n -c --color '\bc\|\bs' const.txt
+ 1046  grep -i -n -o --color '\bc\|\bs' const.txt
+ 1047  grep -i -n --color '\bc\|\bs' const.txt
+ 1048  grep -i -n -o --color '\bc\|\bs' const.txt
+ 1049  grep -i -n -o --color '\bc\|\bs' const.txt | wc -w
+ 1050  l
+ 1051  ls
+ 1052  rm answers.txt
+ 1053  ls
+ 1054  grep -i -n -o --color '\bc\|\bs' const.txt scarlet.txt usdeclar.txt | wc -c
+ 1055  grep -i -o --color '\bc\|\bs' const.txt scarlet.txt usdeclar.txt | wc -c
+ 1056  grep -i -o --color '\bc\|\bs' const.txt scarlet.txt usdeclar.txt | wc -w
+ 1057  grep -i -o --color '\bc\|\bs' const.txt scarlet.txt usdeclar.txt | wc -l
+ 1058  ls
+ 1059  grep ^c
+ 1060  ls files | grep ^c
+ 1061  ls | grep ^c
+ 1062  ls | grep ^c | ^s
+ 1063  ls | grep ^c ^s
+ 1064  ls | grep ^s
+ 1065  ls | grep ^s | grep ^c
+ 1066  ls
+ 1067  ls | grep ^s/|^c
+ 1068  ls | grep '^s/|^c'
+ 1069  ls | grep ^c | wc -w
+ 1070  grep ^c | wc -w
+ 1071  ls|grep ^c
+ 1072  ls|grep -w ^c
+ 1073  grep -w ^c
+ 1074  grep ^c | wc -w
+ 1075  grep ^c
+ 1076  ls|grep ^c
+ 1077  ls | grep ^c | wc -w
+ 1078  wc -w | ls | grep ^c
+ 1079  wc -w const.txt
+ 1080  wc -w ls | grep ^c
+ 1081  wc -w | grep ^c
+ 1082  ls | grep ^c | wc -w
+ 1083  ls | grep ^c | wc -w grep ^c
+ 1084  ls | wc -w grep ^c
+ 1085  ls | wc -w | grep ^c
+ 1086  ls -l
+ 1087  wc -w const.txt
+ 1088  find -name 'c'
+ 1089  ls
+ 1090* find -name 'c'
+ 1091  ls | grep ^s
+ 1092  ls | grep ^s/|^c
+ 1093  ls | grep ^s /| ^c
+ 1094  ls | grep '^s /| ^c'
+ 1095  ls | grep ^s|^c
+ 1096  ls | grep ^s| grep ^c
+ 1097  find . -name "c" 
+ 1098  find -name "c" 
+ 1099  find -name 'c'
+ 1100  find -name '[c]*'
+ 1101  find -name '[c]*' -o -name '[s]*'
+ 1102  find -name '[c]*' -o -name '[s]*' | wc -w
+ 1103  wc -c | find -name '[c]*' -o -name '[s]*'
+ 1104  find -name '[c]*' -o -name '[s]*'
+ 1105  find -name '[c]*' -o -name '[s]*' | grep -c
+ 1106  grep -c const.txt
+ 1107  grep -c < find -name '[c]*' -o -name '[s]*'
+ 1108  find -name '[c]*' -o -name '[s]*' < grep -c
+ 1109  find -name '[c]*' -o -name '[s]*' < wc -w
+ 1110  wc -w < find -name '[c]*' -o -name '[s]*'
+ 1111  grep -rl "c" ./files
+ 1112  grep -rl "c" /files
+ 1113  grep -rl "c" files
+ 1114  grep -rl "c" ~./files
+ 1115  grep -cx '\s*' const.txt
+ 1116  ls
+ 1117  cat "[jaea@login2 files]$ grep -cx '\s*' const.txt
+ 1118  grep '^Article' const.txt scarlet.txt usdeclar.txt | wc -l
+ 1119  grep '^Article' const.txt | wc -l
+ 1120  grep -n '^Article' const.txt | wc -l
+ 1121  grep --color '^Article' const.txt
+ 1122  grep --color '^Article' scarlet.txt
+ 1123  grep --color '^Article' usdeclar.txt
+ 1124  grep --color '^Article' const.txt
+ 1125  grep --color '^Article\s[0-9]' const.txt
+ 1126  grep --color '^Article\s[0-9]' const.txt | wc -l
+ 1127  grep --color '^Article\s[0-9]' const.txt scarlet.txt usdeclar.txt | wc -l
+ 1128  grep -n '^Article\s[0-9]' const.txt scarlet.txt usdeclar.txt
+ 1129  grep -i '^Article\s[0-9]' const.txt scarlet.txt usdeclar.txt
+ 1130  grep -c '^Article\s[0-9]' const.txt scarlet.txt usdeclar.txt
+ 1131  grep --color '^Article\s[0-9]' const.txt scarlet.txt usdeclar.txt
+ 1132  grep --color '^Article\s[0-9]' const.txt scarlet.txt usdeclar.txt | wc -l
+ 1133  grep --color '^Article\s[0-9]' const.txt scarlet.txt usdeclar.txt
+ 1134  grep '^Article\s[0-9]' const.txt scarlet.txt usdeclar.txt
+ 1135  find -name '[c]*' -o -name '[s]*'
+ 1136  wc -w const.txt
+ 1137  wc -w scarlet.txt
+ 1138  <find -name '[c]*' -o -name '[s]*' wc -w
+ 1139  <find -name '[c]*' -o -name '[s]*' wc -w>
+ 1140  find -name '[c]*' -o -name '[s]*' wc -w
+ 1141  grep '[sc]'
+ 1142  grep -l '[sc]'
+ 1143  grep -il '[sc]'
+ 1144  grep -il '[sc]'*
+ 1145  egrep -i '[sc]'*
+ 1146  egrep -i '[sc]' *
+ 1147  grep -l '[sc]' *
+ 1148  grep -l '[sc]'
+ 1149  grep -l '^[sc]'
+ 1150  grep -l '[^s^c]'
+ 1151  grep -l '[^s]'
+ 1152  grep -l [^s]
+ 1153  find . -typ f -exec grep -il 'c' {} \;
+ 1154  find . -type f -exec grep -il 'c' {} \;
+ 1155  find -name '[c]*' -o -name '[s]*'
+ 1156  find -name '[c]*' -o -name '[s]*' | wc -w
+ 1157  grep -i '^[aeiou]' scarlet.txt
+ 1158  grep -i '^[aeiou]' scarlet.txt | wc -c
+ 1159  grep -i '^[aeiou]' scarlet.txt | wc -l
+ 1160  grep -i --color '^[aeiou]' scarlet.txt | wc -l
+ 1161  grep -i --color '^[aeiou]' scarlet.txt
+ 1162  grep -i -o --color '^[aeiou]' scarlet.txt | wc -l 
+ 1163  grep -i -o --color '^[aeiou]' scarlet.txt
+ 1164  grep -i -o --color '^[aeiou]' scarlet.txt | wc -c
+ 1165  grep -i -c --color '^[aeiou]' scarlet.txt
+ 1166  grep -i --color '^[aeiou]' scarlet.txt
+ 1167  grep -i -o --color '^[aeiou]' scarlet.txt
+ 1168  grep -i -o -c --color '^[aeiou]' scarlet.txt
+ 1169  grep -i -o -m --color '^[aeiou]' scarlet.txt
+ 1170  grep -i -m --color '^[aeiou]' scarlet.txt
+ 1171  grep -i -o --color '^[aeiou]' scarlet.txt
+ 1172  grep -i -o --color '^[aeiou]' scarlet.txt | awk -F'^AEIOUaeiou' '{c+=NF-1}END{print c}'
+ 1173  grep -i --color '^[aeiou]' scarlet.txt | awk -F'^AEIOUaeiou' '{c+=NF-1}END{print c}'
+ 1174  grep -i '^[aeiou]' scarlet.txt | awk -F'^AEIOUaeiou' '{c+=NF-1}END{print c}'
+ 1175  grep -i '^[aeiou]' scarlet.txt | awk -F'^A|^E|^I|^O|^U|^a|^e|^i|^o|^u' '{c+=NF-1}END{print c}'
+ 1176  ls
+ 1177  cd ..
+ 1178  ls
+ 1179  cat README.md
+ 1180  grep -i '^[aeiou]' scarlet.txt | awk '{c+=$1};END{"total: " c}'
+ 1181  grep -i -o '^[aeiou]' scarlet.txt | awk '{c+=$1};END{"total: " c}'
+ 1182  ls
+ 1183  cd files
+ 1184  ls
+ 1185  grep -i -o '^[aeiou]' scarlet.txt | awk '{c+=$1};END{"total: " c}'
+ 1186  grep -i -o '^[aeiou]' scarlet.txt | awk '{c+=$1};END{print"total: " c}'
+ 1187  grep -i -o '^[aeiou]' scarlet.txt | awk '{c+=NF-1};END{"total: " c}'
+ 1188  grep -i '^[aeiou]' scarlet.txt | awk '{c+=NF-1};END{"total: " c}'
+ 1189  grep -i -o '^[aeiou]' scarlet.txt | uniq -c
+ 1190  grep -i -o '^[aeiou]' scarlet.txt | uniq
+ 1191  grep -i -o '^[aeiou]' scarlet.txt | uniq -s
+ 1192  grep -i -o '^[aeiou]' scarlet.txt | uniq -u
+ 1193  grep -i -o '^[aeiou]' scarlet.txt | uniq -c
+ 1194  grep -i -o '^[aeiou]' scarlet.txt | uniq
+ 1195  grep -i -o '^[aeiou]' scarlet.txt < uniq
+ 1196  uniq < grep -i -o '^[aeiou]' scarlet.txt
+ 1197  grep -i -o '^[aeiou]' scarlet.txt
+ 1198  grep -i -o '^[aeiou]' scarlet.txt | uniq
+ 1199  grep -i -o '^[aeiou]' scarlet.txt | uniq -i
+ 1200  grep -i '^[aeiou]' scarlet.txt | uniq -i
+ 1201  grep -i '^[aeiou]' scarlet.txt | uniq
+ 1202  grep -i '^[aeiou]' scarlet.txt | uniq -w 1
+ 1203  grep -i '^[aeiou]' scarlet.txt | uniq -s 1
+ 1204  grep -i '^[aeiou]' scarlet.txt | uniq -f 1
+ 1205  grep -i '^[aeiou]' scarlet.txt | uniq -u 1
+ 1206  grep -i '^[aeiou]' scarlet.txt | uniq
+ 1207  grep -i -o '^[aeiou]' scarlet.txt
+ 1208  grep -i -o '^[aeiou]' scarlet.txt | sort
+ 1209  grep -i -o '^[aeiou]' scarlet.txt | sort | uniq
+ 1210  grep -i -o '^[aeiou]' scarlet.txt | sort | uniq | sort
+ 1211  grep -i -o '^[aeiou]' scarlet.txt | sort | uniq -c
+ 1212  grep -i -o '^[aeiou]' scarlet.txt | sort -n | uniq -c
+ 1213  grep -i -o '^[aeiou]' scarlet.txt | sort -k 2 | uniq -c
+ 1214  grep -i -o '^[aeiou]' scarlet.txt | sort -nr | uniq -c
+ 1215  grep -i -o '^[aeiou]' scarlet.txt | LC_ALL=C sort | uniq -c
+ 1216  grep -i '^[aeiou]' scarlet.txt | LC_ALL=C sort | uniq -c
+ 1217  grep -i -o '^[aeiou]' scarlet.txt | LC_ALL=C sort | uniq -c
+ 1218  grep -i -o ^s
+ 1219  ls | grep -i -o ^s
+ 1220  ls | grep -i -o '^s'
+ 1221  ls | grep -i '^s'
+ 1222  ls | grep -i '^s|^c'
+ 1223  ls | grep -i [sc]
+ 1224  ls | grep -i ^[sc]
+ 1225  ls | grep -i ^[sc] | wc -w
+ 1226  ls | grep -i ^[sc] | wc -l
+ 1227  ls | grep -i ^[sc] | wc -c
+ 1228  ls | grep -i ^[sc] | wc -l
+ 1229  ls | grep -i -o ^[sc] | wc -w
+ 1230  ls | grep -i -o ^[sc]
+ 1231  ls | grep -i -n ^[sc]
+ 1232  ls | grep -i ^[sc]
+ 1233  ls | grep -i -c ^[sc]
+ 1234  ls | grep -i ^[sc]
+ 1235  ls -d | grep -i ^[sc]
+ 1236  ls -d | grep -i ^[sc] | wc -w
+ 1237  ls -d | grep -i ^[sc] | wc
+ 1238  ls | grep -i ^[sc] | wc
+ 1239  cat | grep -i ^[sc] | wc
+ 1240  cat < grep -i ^[sc] | wc
+ 1241  ls | grep -i ^[sc] | wc
+ 1242  grep -i ^[sc]
+ 1243  wc -w < ls | grep -i ^[sc]
+ 1244  ls | grep -i ^[sc] | wc
+ 1245  ls | grep -i ^[sc]
+ 1246  ls | grep -w ^[sc]
+ 1247  ls | grep -w ^[sc] | wc -w
+ 1248  grep -w ^[sc] | wc -w
+ 1249  grep -w '^[sc]' | wc -w
+ 1250  ls | grep -w '^[sc]' | wc -w
+ 1251  cat | grep -w '^[sc]' | wc -w
+ 1252  cat < grep -w '^[sc]' | wc -w
+ 1253  cat < grep -w '^[sc]'
+ 1254  cat < *grep -w '^[sc]'*
+ 1255  cat | grep -w '^[sc]'*
+ 1256  wc -w grep -w '^[sc]'*
+ 1257  wc -w *grep -w '^[sc]'*
+ 1258  wc -w grep -w '^[sc]'
+ 1259  wc -w | grep -w '^[sc]'
+ 1260  wc -w < grep -w '^[sc]'
+ 1261  find / -name '^[sc]'
+ 1262  find / -name ^[sc]
+ 1263  find -name ^[sc]
+ 1264  find -name '^[sc]'
+ 1265  find / -iname pattern '^[sc]'
+ 1266  find . -name "^[sc]"
+ 1267  find . -name ^[sc]
+ 1268  find . -name '^[sc]'
+ 1269  find . -name "*.txt"
+ 1270  find . -type f \(-name "c" -o -name "s"\)
+ 1271  find . -type f \( -name "c" -o -name "s" \)
+ 1272  find . -type f \( -name "c" -o -name "s" -exec wc -w \)
+ 1273  find . -type f -name "c" -o -name "s" -exec wc -w {}\;
+ 1274  find . -name "c" -o -name "s" -exec wc -w {}\;
+ 1275  find . -type f -name ^c -o -name ^s -exec wc -w {}\;
+ 1276  find . -type f -name ^c -o -name ^s
+ 1277  find . -type f -name "^s"
+ 1278  find . -type f -name "^s" | wc -w
+ 1279  find . -type f -name '^s' | wc -w
+ 1280  find . -type f -name ^s | wc -w
+ 1281  find / -type f -name ^s | wc -w
+ 1282  find . -type f -name ^s | wc -w
+ 1283  find . -name ^s -type f -print
+ 1284  find . -name ^s -type f
+ 1285  find . -name '^s' -type f
+ 1286  find . -name ^"s" -type f
+ 1287  find . -name "s*.txt" -type f
+ 1288  find . -name "s*.txt" -o -name "c*.txt" -type f
+ 1289  find . -name "s" -o -name "c" -type f
+ 1290  find . -name "s" -o -name "c*" -type f
+ 1291  find . -name "s*" -o -name "c*" -type f
+ 1292  find . -name "s*" -o -name "c*" -type f | wc -w
+ 1293  find . -name "s*" -o -name "c*" -type f -exec wc -w {}\;
+ 1294  find . -name "s*" -o -name "c*" -type f -exec wc {}\;
+ 1295  find . -name "s*" -o -name "c*" -type f -exec grep -w {}\;
+ 1296  find . -name "s*" -o -name "c*" -type f -exec grep -w {} \;
+ 1297  find . -name "s*" -o -name "c*" -type f -exec grep -c {} \;
+ 1298  find . -name "s*" -o -name "c*" -type f -exec ls -ld {} \;
+ 1299  find . -name "s*" -o -name "c*" -type f -exec wc -l {} \;
+ 1300  find . -name "s*" -o -name "c*" -type f -exec wc -c {} \;
+ 1301  find . -name "s*" -o -name "c*" -type f -exec wc -w {} \;
+ 1302  find . \(-name "s*" -o -name "c*"\) -type f -exec wc -w {} \;
+ 1303  find . \(-name "s*" -o -name "c*" -type f\) -exec wc -w {} \;
+ 1304  find . \( -name "s*" -o -name "c*" -type f \) -exec wc -w {} \;
+ 1305  wc -w scarlet.txt
+ 1306  wc -w const.txt
+ 1307  find . \( -name "^s" -o -name "^c" -type f \) -exec wc -w {} \;
+ 1308  find . \( -name '^s' -o -name '^c' -type f \) -exec wc -w {} \;
+ 1309  find . \( -name "^s" -o -name "^c" -type f \) -exec wc -w {} \;
+ 1310  find . \( -name "s*" -o -name "c*" -type f \) -exec wc -w {} \;
+ 1311  find . \( -name "s" -o -name "c" -type f \) -exec wc -w {} \;
+ 1312  find . \( -name "s*" -o -name "c*" -type f \) -exec wc -w {} \;
+ 1313  ls
+ 1314  echo “$ find . \( -name "s*" -o -name "c*" -type f \) -exec wc -w {} \;”
+ 1315  echo “$ find . \( -name "s*" -o -name "c*" -type f \) -exec wc -w {} \;” > answers.txt
+ 1316  cat answers.txt
+ 1317  rm answers.txt
+ 1318  echo “$ find . \( -name "s*" -o -name "c*" -type f \) -exec wc -w {} \;” > answers.txt
+ 1319  cat answers.txt
+ 1320  rm answers.txt
+ 1321  echo “$ find . \( -name "s*" -o -name "c*" -type f \) -exec wc -w {} \;”
+ 1322  echo “$ find . \( -name """s*""" -o -name "c*" -type f \) -exec wc -w {} \;”
+ 1323  echo “$ find . \( -name /"s*/" -o -name "c*" -type f \) -exec wc -w {} \;”
+ 1324  echo $ find . \( -name /"s*/" -o -name "c*" -type f \) -exec wc -w {} \;
+ 1325  echo $ find . \( -name /"s*/" -o -name "c*" -type f \) -exec wc -w {} \; > answers.txt
+ 1326  cat answers.txt
+ 1327  find . \( -name "s*" -o -name "c*" -type f \) -exec wc -w {} \;
+ 1328  find . \( -name "s*" -o -name "c*" -type f \) -exec wc -w {} \; >> answers.txt
+ 1329  cat answers.txt
+ 1330  echo “$ grep -cx '\s*' const.txt”
+ 1331  echo $ grep -cx '\s*' const.txt
+ 1332  echo $ grep -cx '\s*' const.txt >> answers.txt
+ 1333  cat answers.txt
+ 1334  grep -cx '\s*' const.txt
+ 1335  grep -cx '\s*' const.txt >> answers.txt
+ 1336  cat answers.txt
+ 1337  echo $ grep '^Article\s[0-9]' const.txt scarlet.txt usdeclar.txt | wc -l const.txt
+ 1338  echo $ grep '^Article\s[0-9]' const.txt scarlet.txt usdeclar.txt | wc -l
+ 1339  grep '^Article\s[0-9]' const.txt scarlet.txt usdeclar.txt | wc -l
+ 1340  echo "$ grep '^Article\s[0-9]' const.txt scarlet.txt usdeclar.txt | wc -l"
+ 1341  echo "$ grep '^Article\s[0-9]' const.txt scarlet.txt usdeclar.txt | wc -l" >> answers.txt
+ 1342  cat answers.txt
+ 1343  grep '^Article\s[0-9]' const.txt scarlet.txt usdeclar.txt | wc -l
+ 1344  grep '^Article\s[0-9]' const.txt scarlet.txt usdeclar.txt | wc -l >> answers.txt
+ 1345  cat answers.txt
+ 1346  echo “$ grep -i -o '^[aeiou]' scarlet.txt | LC_ALL=C sort | uniq -c”
+ 1347  echo $ grep -i -o '^[aeiou]' scarlet.txt | LC_ALL=C sort | uniq -c
+ 1348  echo "$ grep -i -o '^[aeiou]' scarlet.txt | LC_ALL=C sort | uniq -c "
+ 1349  echo "$ grep -i -o '^[aeiou]' scarlet.txt | LC_ALL=C sort | uniq -c " >> answers.txt
+ 1350  cat answers.txt
+ 1351  grep -i -o '^[aeiou]' scarlet.txt | LC_ALL=C sort | uniq -c
+ 1352  grep -i -o '^[aeiou]' scarlet.txt | LC_ALL=C sort | uniq -c>> answers.txt
+ 1353  cat answers.txt
+ 1354  ls
+ 1355  rm hw1temp.txt
+ 1356  ls
+ 1357  history > cmds
