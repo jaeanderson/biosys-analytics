@@ -8,9 +8,7 @@ fi
 INPUT_FILE=$1
 NUM=${2:-3}
 
-if [[ -f  "$INPUT_FILE" ]]; then
-     NUM_LINES=$(wc -l "$INPUT_FILE" | awk '{print $1}')
-else
+if [[ ! -f  "$INPUT_FILE" ]]; then
      echo "$INPUT_FILE is not a file"
      exit 1
 fi
