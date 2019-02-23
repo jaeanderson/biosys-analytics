@@ -49,29 +49,25 @@ def main():
 
 
     state_translate = ''
-    #for i, char in enumerate(state_outcome, start=1):
-    #    cells.append(str(char) if char == '.' else char)
-    #print(cells)
-
 
     if win_dict.get(state_outcome) != None:
         die('{} has won'.format(win_dict.get(state_outcome)))
 
     for move, player in win_dict.items():
-        print('move: {} player: {}'.format(move,player))
+        #print('move: {} player: {}'.format(move,player))
         for i, char in enumerate(state_outcome, start=1):
             if char == move[i-1]:
                 state_translate += str(char)
             else:
                 state_translate += '.'
-        print(state_translate)
-        #print(type(move))
-        #print(type(win_dict.get(state_translate)))
-        #if type(win_dict.get(state_translate)) == str:
-        #    die('{} has won'.format(win_dict.get(state_translate)))
+        #print(state_translate)
+        if state_translate == move:
+            #print('HELLO')
+            die('{} has won'.format(win_dict.get(state_translate)))
         #else:
         #    die('No winner')
         state_translate = ''
+    die('No winner')
 
 
 
