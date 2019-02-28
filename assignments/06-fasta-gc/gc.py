@@ -69,7 +69,6 @@ def main():
         if not os.path.isfile(fastafile):
             die('"{}" is not a file'.format(fastafile))
         else:         
-           # num_seqs_written = 0
             high_seqs = []
             low_seqs = []
             gc_ctr = 0
