@@ -58,7 +58,6 @@ def main():
     gc_pct = args.pct_gc
     outdir = args.outdir
 
-#    num_seqs = 0
     high_seq_flag = 0
     num_seqs_written = 0
 
@@ -70,7 +69,7 @@ def main():
         if not os.path.isfile(fastafile):
             die('"{}" is not a file'.format(fastafile))
         else:         
-            #num_seqs_written = 0
+           # num_seqs_written = 0
             high_seqs = []
             low_seqs = []
             gc_ctr = 0
@@ -85,17 +84,17 @@ def main():
                 if gc_calc >= gc_pct:
                     high_seq_flag = 1
                     high_seqs.append(record)
-                    num_seqs_written += process(file=fastafile, rec=record, out_dir=outdir, seqs_per_file=high_seqs, seq_flag=high_seq_flag)
+                    num_seqs_written += process(file=fastafile, out_dir=outdir, seqs_per_file=high_seqs, seq_flag=high_seq_flag)
                 else:
                     high_seq_flag = 0
                     low_seqs.append(record)
-                    num_seqs_written += process(file=fastafile, rec=record, out_dir=outdir, seqs_per_file=low_seqs, seq_flag=high_seq_flag)
+                    num_seqs_written += process(file=fastafile, out_dir=outdir, seqs_per_file=low_seqs, seq_flag=high_seq_flag)
                 gc_ctr = 0
    
     die('Done, wrote {} sequences to out dir "{}"'.format(num_seqs_written, outdir))
 
 #--------------------------------------------------------
-def process (file, rec, out_dir, seqs_per_file, seq_flag):
+def process (file, out_dir, seqs_per_file, seq_flag):
 
     basename, ext = os.path.splitext(os.path.basename(file))
 
