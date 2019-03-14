@@ -58,9 +58,9 @@ def main():
     annotations = args.annotations
     outfile = args.outfile
 
-    blast_headers = 'qseqid sseqid pident length mismtch gapopen qstrt qend                      sstrt send evalue bitscore'.split()
+    blast_headers = 'qseqid sseqid pident length mismtch gapopen qstrt qend sstrt send evalue bitscore'.split()
 
-    anno_headers = 'centroid domain kingdom phylum class order genus species'                  .split()
+    anno_headers = 'centroid domain kingdom phylum class order genus species'.split()
 
     output_headers = 'seq_id pident genus species'.split()
 
