@@ -62,8 +62,6 @@ def main():
 
     anno_headers = 'centroid domain kingdom phylum class order genus species'.split()
 
-    output_headers = 'seq_id pident genus species'.split()
-
     if not os.path.isfile(blastfile):
         die('"{}" is not a file'.format(blastfile))
 
@@ -75,18 +73,13 @@ def main():
         anno_reader = csv.DictReader(afile, delimiter=',')
         for anno_row in anno_reader:
             centroid = anno_row['centroid']
-            genus = anno_row['genus']
-            species = anno_row['species']
-            if genus == '':
-                genus = 'NA'
-            if species == '':
-                species ='NA'
+            genus = anno_row['genus'] or 'NA'
+            species = anno_row['species'] or 'NA'
             anno_list = [genus, species]
             anno_dict[centroid] = anno_list
     afile.close()
 
     match_dict = {};  match_list = []
-#    no_matches_list = []
     with open(blastfile, 'r') as bfile:
         blast_reader = csv.reader(bfile, delimiter='\t')
         for bline in blast_reader:
@@ -100,20 +93,23 @@ def main():
                 match_dict = {'seq':sseqid, 'pid':pident, 'genus':g, 'species':s}
                 match_list.append(match_dict)
             else:               
- #               no_matches_list.append(sseqid)
                 print('Cannot find seq "{}" in lookup'.format(sseqid), file=sys.stderr)
     bfile.close()
+
     output_matches(filename=outfile, mlist=match_list)
 
 #---------------------------------------------------------
 def output_matches(filename, mlist):
 
+    output_headers = 'seq_id pident genus species'.split()
     sorted_mlist = sorted(mlist, key=lambda x: x['pid'], reverse=True)
+
     if filename != '':
-        sys.stdout = open(filename, 'wt')
-    sys.stdout.write('seq_id\tpident\tgenus\tspecies\n')
+        sys.stdout = open(filename, 'w')
+
+    sys.stdout.write('\t'.join(output_headers) + '\n')
     for matches in sorted_mlist:
-        sys.stdout.write('{}\t{}\t{}\t{}\n'.format(matches.get('seq'), matches.get('pid'), matches.get('genus'), matches.get('species')))
+        sys.stdout.write('{}\t{}\t{}\t{}\n'.format(matches.get('seq'), matches.get('pid'), matches.get('genus'), matches.get('species'))) 
     sys.stdout.close()
 #---------------------------------------------------------
 if __name__=='__main__':
