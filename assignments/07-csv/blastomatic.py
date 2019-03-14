@@ -92,7 +92,7 @@ def main():
         for bline in blast_reader:
             blastrow = dict(zip(blast_headers, bline))
             sseqid = blastrow['sseqid']
-            pident = blastrow['pident']
+            pident = float(blastrow['pident'])
             if sseqid in anno_dict:
                 anno_values = anno_dict.get(sseqid)
                 g = anno_values[0]
@@ -110,7 +110,7 @@ def output_matches(filename, mlist):
 
     sorted_mlist = sorted(mlist, key=lambda x: x['pid'], reverse=True)
     if filename != '':
-        sys.stdout = open(filename, 'w')
+        sys.stdout = open(filename, 'wt')
     sys.stdout.write('seq_id\tpident\tgenus\tspecies\n')
     for matches in sorted_mlist:
         sys.stdout.write('{}\t{}\t{}\t{}\n'.format(matches.get('seq'), matches.get('pid'), matches.get('genus'), matches.get('species')))
