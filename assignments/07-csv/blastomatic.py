@@ -85,9 +85,8 @@ def main():
             anno_dict[centroid] = anno_list
     afile.close()
 
-    mctr = 0; no_mctr = 0
     match_dict = {};  match_list = []
-    no_matches_list = []
+#    no_matches_list = []
     with open(blastfile, 'r') as bfile:
         blast_reader = csv.reader(bfile, delimiter='\t')
         for bline in blast_reader:
@@ -95,21 +94,19 @@ def main():
             sseqid = blastrow['sseqid']
             pident = blastrow['pident']
             if sseqid in anno_dict:
-                mctr += 1
                 anno_values = anno_dict.get(sseqid)
                 g = anno_values[0]
                 s = anno_values[1]
                 match_dict = {'seq':sseqid, 'pid':pident, 'genus':g, 'species':s}
                 match_list.append(match_dict)
             else:               
-                no_mctr += 1
-                no_matches_list.append(sseqid)
+ #               no_matches_list.append(sseqid)
                 print('Cannot find seq "{}" in lookup'.format(sseqid), file=sys.stderr)
     bfile.close()
-    output_matches(filename=outfile, mlist=match_list, ctr=mctr)
+    output_matches(filename=outfile, mlist=match_list)
 
 #---------------------------------------------------------
-def output_matches(filename, mlist, ctr):
+def output_matches(filename, mlist):
 
     sorted_mlist = sorted(mlist, key=lambda x: x['pid'], reverse=True)
     if filename != '':
