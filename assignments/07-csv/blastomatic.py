@@ -60,7 +60,7 @@ def main():
 
     blast_headers = 'qseqid sseqid pident length mismtch gapopen qstrt qend sstrt send evalue bitscore'.split()
 
-    anno_headers = 'centroid domain kingdom phylum class order genus species'.split()
+#    anno_headers = 'centroid domain kingdom phylum class order genus species'.split()
 
     if not os.path.isfile(blastfile):
         die('"{}" is not a file'.format(blastfile))
