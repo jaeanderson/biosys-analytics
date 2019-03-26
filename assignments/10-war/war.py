@@ -82,7 +82,7 @@ def main():
             win = 'P2'
         if p1_value == p2_value:
             win = 'WAR!'
-        print('{:>3} {:>3} {:<4}'.format(p1_card, p2_card, win))
+        print('{:>3} {:>3} {}'.format(p1_card, p2_card, win))
 
         if len(card_list) == 0:
             if p1_ctr > p2_ctr:
