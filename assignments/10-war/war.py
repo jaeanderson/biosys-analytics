@@ -62,12 +62,10 @@ def main():
         deck_dict[card] = vmod + 1
 
     
-    card_list = list(deck_dict.keys())
+    card_list = sorted(deck_dict.keys())
     random.seed(seed)
     random.shuffle(card_list)
     #print(card_list)
-    #print(sorted_deck)
-
 
     p1 = []; p2 = []
     p1_ctr = 0; p2_ctr = 0; card_ctr = 0
