@@ -65,7 +65,10 @@ def main():
     card_list = list(deck_dict.keys())
     random.seed(seed)
     random.shuffle(card_list)
-    #print(card_list)
+    print(card_list)
+    #random.shuffle(deck_dict.items())
+    #print(sorted_deck)
+
 
     p1 = []; p2 = []
     p1_ctr = 0; p2_ctr = 0; card_ctr = 0
@@ -77,13 +80,13 @@ def main():
                 game_winner = 'Player 2 wins'
             else:
                 game_winner = 'DRAW'
-            print('P1 {} p2 {}: {}'.format(p1_ctr, p2_ctr, game_winner))
+            print('P1 {} P2 {}: {}'.format(p1_ctr, p2_ctr, game_winner))
             break
 
-        p1_card = card_list.pop(0)
+        p1_card = card_list.pop()
         p1_value = deck_dict[p1_card]
-
-        p2_card = card_list.pop(0)
+        
+        p2_card = card_list.pop()
         p2_value = deck_dict[p2_card]
         
         if p1_value > p2_value:
