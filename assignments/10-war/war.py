@@ -52,22 +52,7 @@ def main():
     suits = ['\u2660','\u2663','\u2665','\u2666']
     cvalues = ['A','2','3','4','5','6','7','8','9','10','J','Q','K']
 
-    rank = {1:'A',
-            2:'2',
-            3:'3',
-            4:'4',
-            5:'5',
-            6:'6',
-            7:'7',
-            8:'8',
-            9:'9',
-            10:'10',
-            11:'J',
-            12:'Q',
-            13:'K'}
-
-    #cd = 'A2345678910JQK'
-    cdeck = (list(itertools.product(suits, rank.values())))
+    cdeck = (list(itertools.product(suits, cvalues)))
     #print(sorted(cdeck))
     
     d = list(v+s for v, s in cdeck)
@@ -77,20 +62,15 @@ def main():
         deck_dict[card] = vmod + 1
 
     
-    sorted_deck = sorted(deck_dict.items(), key=lambda kv: kv[1])
-    #sorted_deck = sorted(d, key=itemgetter(1))
-    #print(deck_dict)
-    #print('seed: {}'.format(seed)) 
+    card_list = list(deck_dict.keys())
     random.seed(seed)
-    random.shuffle(sorted_deck)
-    #random.shuffle(deck_dict.items())
-    #print(sorted_deck)
-
+    random.shuffle(card_list)
+    #print(card_list)
 
     p1 = []; p2 = []
     p1_ctr = 0; p2_ctr = 0; card_ctr = 0
     while True:
-        if len(sorted_deck) == 0:
+        if len(card_list) == 0:
             if p1_ctr > p2_ctr:
                 game_winner = 'Player 1 wins'
             elif p1_ctr < p2_ctr:
@@ -100,13 +80,11 @@ def main():
             print('P1 {} p2 {}: {}'.format(p1_ctr, p2_ctr, game_winner))
             break
 
-        p1 = sorted_deck.pop(0)
-        p1_card = p1[0]
-        p1_value = p1[0][1]
-        
-        p2 = sorted_deck.pop(0)
-        p2_card = p2[0]
-        p2_value = p2[0][1]
+        p1_card = card_list.pop(0)
+        p1_value = deck_dict[p1_card]
+
+        p2_card = card_list.pop(0)
+        p2_value = deck_dict[p2_card]
         
         if p1_value > p2_value:
             p1_ctr += 1
