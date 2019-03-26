@@ -65,8 +65,7 @@ def main():
     card_list = list(deck_dict.keys())
     random.seed(seed)
     random.shuffle(card_list)
-    print(card_list)
-    #random.shuffle(deck_dict.items())
+    #print(card_list)
     #print(sorted_deck)
 
 
