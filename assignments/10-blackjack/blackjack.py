@@ -81,7 +81,6 @@ def main():
     deck = sorted(d)
     random.seed(seed)
     random.shuffle(deck)
-    #print(deck)
 
     plist = []; dlist = []
     plyr_sum = 0; dlr_sum = 0
@@ -91,11 +90,6 @@ def main():
     dlist.append(deck.pop(-1))
     plist.append(deck.pop(-1))
     dlist.append(deck.pop(-1))
-
-    #pc1, dc1, pc2, dc2 = deck.pop(-1), deck.pop(-1), deck.pop(-1), deck.pop(-1)
-
-    #print(pc1, pc2)
-    #print(dc1, dc2)
 
     if pflg: 
         pc3 = deck.pop(-1)
@@ -125,14 +119,17 @@ def main():
     if dlr_sum == 21:
         print('Dealer wins!')
         sys.exit(0)
-    if dlr_sum < 19:
-        print('Dealer should hit.')
-    if plyr_sum < 19:
-        print('Player should hit.')    
 
-#---------------------------------------------------------
-def deal_card(hlist, dlist):
-    return hlist.append(dlist.pop(-1))
+    if dlr_sum < 18 and plyr_sum < 18:
+        print('Dealer should hit.')
+        print('Player should hit.')
+        sys.exit(0)
+    if dlr_sum < 18:
+        print('Dealer should hit.')
+        sys.exit(0)
+    elif plyr_sum < 18:
+        print('Player should hit.')
+        sys.exit(0)
 
 #---------------------------------------------------------
 def get_sum(hlist, crdict):
