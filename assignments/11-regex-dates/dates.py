@@ -29,9 +29,9 @@ def main():
     short_year = '(?P<syear>\d{2})'
     month = '(?P<month>\d{1,2})'
     day = '(?:-(?P<day>\d{1,2}?))'
-    written_mth = '(?P<mth>Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|                    May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?Sep(?:tember)?|Oct(?:                    ober)?|Nov(?:ember)?|Dec(?:ember)?)'
+    written_mth = '(?P<mth>Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)'
 
-    
+    #print(written_mth) 
 
     date_re1 = re.compile('^(?P<year>\d{4})[-](?P<month>\d{1,2})(?:-(?P<day>\d{1,2})?)')
     match1 = date_re1.match(input)
@@ -48,8 +48,8 @@ def main():
     #match4 = date_re4.match(input)
     #print('4: {}'.format(match4))
 
-    date_re5 = re.compile(written_mth + sep + year)
-    #match5 = date_re5.search(input)
+    date_re5 = re.compile(written_mth + '[,-]\s?' + year)
+    match5 = date_re5.search(input)
     #print(match5)
 
     if match1:
@@ -65,11 +65,11 @@ def main():
         m3 = int(match3.group('month'))
         y3 = int(match3.group('year'))
         print('20{:02}-{:02}-01'.format(y3, m3))
-    #elif match5:
-    #    y5 = int(match5.group('year'))
-    #    m5 = match5.group('mth')
-    #    m5_num = int(mth_dict[str(m5[:3])])
-    #    print('{:4}-{:02}-01'.format(y5, m5_num))
+    elif match5:
+        m5 = match5.group('mth')
+        m5_num = int(mth_dict[str(m5[:3])])
+        y5 = int(match5.group('year'))
+        print('{:4}-{:02}-01'.format(y5, m5_num))
     else:
         print('No match')
 
