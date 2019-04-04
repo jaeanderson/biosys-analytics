@@ -32,8 +32,8 @@ def main():
     good_input = instate_re.match(state)
 
     if good_input:
-        for move, winner in win_dict.items():
-            match = re.fullmatch(move, state)
+        for winning_move, winner in win_dict.items():
+            match = re.fullmatch(winning_move, state)
             if match:
                 print('{} has won'.format(winner))
                 sys.exit(1)
