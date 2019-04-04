@@ -32,12 +32,6 @@ def main():
     good_input = instate_re.match(state)
 
     if good_input:
-        win1 = re.compile('(?P<win1>XXX|OOO)')
-        w1 = win1.search(state)
-
-        win2 = re.compile('(?P<win2>[X](?:[\.O]){1,2}[X](?:[\.O]){1,2}[X]|[O](?:[\.X]){1,2}[O](?:[\.X]){1,2}[O])') 
-        w2 = win2.search(state)
-
         for move, winner in win_dict.items():
             match = re.fullmatch(move, state)
             if match:
