@@ -21,7 +21,7 @@ def get_args():
       help='Original Password', metavar='PASSWORD')
 
     parser.add_argument(
-      'alt',
+      'alternate',
       help='Alternate Password', metavar='ALT')
 
     return parser.parse_args()
@@ -43,52 +43,40 @@ def main():
 
     args = get_args()
     pwd = args.password
-    alt = args.alt 
+    alt = args.alternate 
+
+    if pwd == '' and alt == '':
+        sys.exit(1)
 
     capltr_pwd = ''.join(pwd[0].upper() + pwd[1:] for pwd in pwd.split())
-    #print(capltr_pwd)
-    #capltr_re = re.compile('^(?P<capltr>([A-Z]{1})([a-z]+))$')
-    #match2 = capltr_re.match(alt) 
-    #charchk_re = re.compile(r'(?P<charchk>([^\w\s]{1})?' + alt + '([^\w\s]{1})?)?')
-    #match4 = charchk_re.search(alt)
-    match = re.search(pwd, alt)
 
-    #print(pwd, alt)   
- 
+    char_chk = r'(?P<cchk>/[^ -~\\"\'`\s]/)?'
+    #print(char_chk)
+    char_chk_re1 = re.compile(char_chk + pwd)
+    char_chk_re2 = re.compile(pwd + char_chk)
+    #print(char_chk_re1, char_chk_re2)
+    match1 = char_chk_re1.search(alt)
+    match2 = char_chk_re2.search(alt)
+    #match3 = re.match(pwd, alt)
+
+    
+    #print(pwd, alt)    
+    #print(match1, match2)
+
     if pwd == alt:
-        #print('match1 exactly ok')
         print('ok')
 
     elif capltr_pwd == alt: 
-        #print('match2 upper 1st letter ok')
-        #tmp_pwd = ''.join(pwd[0].upper() + pwd[1:] for pwd in pwd.split())
-        #print(tmp_pwd, str(match2.group('capltr')))
-
-        #if tmp_pwd == str(match2.group('capltr')):
-        #    print('ok')
-        #else:
-        #    print('nah')
-        #print(pwd, alt)
         print('ok')
 
     elif pwd.upper() == alt:
-        #print('match 3 all uppercase ok')
         print('ok')
 
-    elif match:
-        #print('match4 ok {}'.format(match4)) 
-        #print(str(match4.group('charchk')))
-        #temp_alt = ' '.join(alt[0:] for alt in alt.split())
-        #if pwd == str(match4.group('charchk')):
-            #print(temp_alt, pwd, str(match4.group('charchk')))
+    elif match1 or match2:
         print('ok')
-        #else:
-        #    print('nah')
-        #print(pwd, alt)
-
+    
     else:
         print('nah')
-        #print(pwd, alt)
 
 #---------------------------------------------------------
 if __name__ == '__main__':
