@@ -64,11 +64,6 @@ def main():
     if not os.path.isfile(infile2):
         die('"{}" is not a file'.format(infile2)) 
 
-    num_edits = 0
-
-    #if infile1 == infile2:
-    #    print(num_edits)
-
     f1 = open(infile1).read().split()
     f2 = open(infile2).read().split()
 
@@ -80,7 +75,6 @@ def main():
 
     hamm_dist = 0; total_diff = 0
     for i, f1_word in enumerate(f1):
-        #print(i, f1_word, f2_lines[i])
         hamm_dist = dist(s1=f1_word, s2=f2[i])
         logging.debug('s1 = {}, s2 = {}, d = {}'.format(f1_word, f2[i], hamm_dist))
         total_diff += hamm_dist
@@ -88,19 +82,17 @@ def main():
 
 #---------------------------------------------------------
 def dist(s1, s2):
-    #char_ctr = 0; len_ctr = 0
-    dist_diff = 0; len_diff = 0
+    hamm_diff = 0; len_diff = 0
 
-#    print(s1, s2)
     if len(s1) != len(s2):
         len_diff = abs(len(s1) - len(s2))  
 
     for char1, char2 in zip(s1, s2):
         if char1 != char2:
-            dist_diff += 1
-#        print(char1, char2, dist_diff)
+            hamm_diff += 1
 
-    return dist_diff + len_diff
+    return hamm_diff + len_diff
+
 #---------------------------------------------------------
 def test_dist():
     """dist ok"""
