@@ -78,7 +78,7 @@ def main():
             #print(hkmers[0], tkmers[0])
             if hkmers[0] != tkmers[0] and hkmers[1] == tkmers[1]:
                 print('{} {}'.format(tkmers[0], hkmers[0]))
-                i#kmer_match.append((tkmers[0], hkmers[0]))           
+                #kmer_match.append((tkmers[0], hkmers[0]))           
 
     #print(sorted(kmer_match))
     #print('{}\n{}'.format(head_kmers, tail_kmers))
