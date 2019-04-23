@@ -40,13 +40,13 @@ def die(msg='Something bad happened'):
 #---------------------------------------------------------
 def unlucky13(nums):
     """sum numbers to 13"""
-    #print(nums)
+    
     sum_list = []
     for i in range(0, len(nums)):
-        #print('n:{}'.format(i))
-        if (int(nums[i]) == 13):
+        #print('n:{}'.format(nums[i]))
+        if (nums[i] == '13'):
             continue
-        elif (int(nums[i-1]) == 13) and int(i) != 0:
+        elif (nums[i-1] == '13') and i != 0:
             continue
         else:
             sum_list.append(int(nums[i]))
@@ -69,18 +69,7 @@ def main():
         numlist = line.split(',')
         #print(numlist)
         luckysum = unlucky13(nums=numlist)
-        #print(line.replace(',',''))
         print('lucky sum: {}'.format(luckysum))
-
-#    test1 = [1, 2, 2, 1]
-#    test2 = [1, 1]
-#    test3 = []
-#    test4 = [13]
-#    test5 = [0]
-#    test6 = [13, 1, 13]
-#    test7 = [13, 1, 2, 13, 2, 1, 13]
-#    test8 = [1, 2, 2, 1, 13]
-#    test9 = [1, 2, 13, 2, 1, 13]
 
 #---------------------------------------------------------
 if __name__ == '__main__':
