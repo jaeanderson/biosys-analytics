@@ -80,14 +80,14 @@ def main():
 
 
     if sort == 'word':
-        #sorted(wdict.items(), key=lambda x: x[0])
-        sorted_dict = dict(sorted(wdict.items()))
+        sorted_dict = dict(sorted(wdict.items(), key=lambda x: x[0]))
     elif sort == 'frequency':
         sorted_dict = dict(sorted(wdict.items(), key=lambda x: x[1]))
 
     for wrds in sorted_dict.items(): 
-        w, wctr = wrds 
-        print('{:20} {}'.format(w, wctr))
+        w, wctr = wrds
+        if wctr >= int(min_ct) or int(min_ct) == 0: 
+            print('{:20} {}'.format(w, wctr))
         
 
 #----------------------------------------------------------
