@@ -68,9 +68,8 @@ def main():
     sort = args.sort
     min_ct = args.min
 
-
+    wdict = defaultdict(int)
     for fh_handle in args.infiles:
-        wdict = defaultdict(int)
         for line in fh_handle:
             for word in line.split():
                 cleanwrd = word_cleaner(s1=word)
@@ -80,14 +79,21 @@ def main():
 
 
     if sort == 'word':
-        sorted_dict = dict(sorted(wdict.items(), key=lambda x: x[0]))
-    elif sort == 'frequency':
-        sorted_dict = dict(sorted(wdict.items(), key=lambda x: x[1]))
+        for pair in sorted(wdict.items()):
+            wrd, wrdct = pair
+            if wrdct >= int(min_ct):
+                print('{:20} {}'.format(wrd, wrdct))
 
-    for wrds in sorted_dict.items(): 
-        w, wctr = wrds
-        if wctr >= int(min_ct) or int(min_ct) == 0: 
-            print('{:20} {}'.format(w, wctr))
+    elif sort == 'frequency':
+        for pair in sorted([(x[1], x[0]) for x in wdict.items()]):
+            wrdct, wrd = pair
+            if wrdct >= int(min_ct):
+                print('{:20} {}'.format(wrd, wrdct))
+
+#    for wrds in sorted_dict.items(): 
+#        w, wctr = wrds
+#        if wctr >= int(min_ct) or int(min_ct) == 0: 
+#            print('{:20} {}'.format(w, wctr))
         
 
 #----------------------------------------------------------
