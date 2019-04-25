@@ -74,34 +74,23 @@ def main():
     sort = args.sort
     min_freq = args.min
 
+    #open given files, clean words from punctuation, and count word frequency
     wdict = defaultdict(int)
     for fh_handle in args.infiles:
         for line in fh_handle:
             for word in line.split():
                 cleanwrd = word_cleaner(s1=word)
-                #print(word, cleanwrd)
                 if cleanwrd != '':
                     wdict[cleanwrd] += 1 if cleanwrd in wdict else wdict[cleanwrd] + 1
 
-
+    #sort words and print with given frequency
     if sort == 'word':
         for wrd, freq in sorted([(x[0], x[1]) for x in wdict.items()]):
             print_words(w=wrd, f=freq, mf=min_freq)
-            #if wrdct >= int(min_ct):
-                #print('{:20} {}'.format(wrd, wrdct))
 
     elif sort == 'frequency':
         for freq, wrd in sorted([(x[1], x[0]) for x in wdict.items()]):
             print_words(w=wrd, f=freq, mf=min_freq)
-            #wrdct, wrd = pair
-            #if wrdct >= int(min_ct):
-            #    print('{:20} {}'.format(wrd, wrdct))
-
-#    for wrds in sorted_dict.items(): 
-#        w, wctr = wrds
-#        if wctr >= int(min_ct) or int(min_ct) == 0: 
-#            print('{:20} {}'.format(w, wctr))
-        
 
 #----------------------------------------------------------
 if __name__ == "__main__":
