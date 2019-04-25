@@ -56,8 +56,14 @@ def die(msg="Something bad happened"):
 
 #----------------------------------------------------------
 def word_cleaner(s1):
-    
+    """Removes punction attached to words"""
     return re.sub('[^a-zA-Z0-9]', '', s1).lower()
+
+#----------------------------------------------------------
+def print_words(w, f, mf):
+    """Prints sorted words with given frequency"""
+    if f >= int(mf):
+        print('{:20} {}'.format(w, f))
 
 #----------------------------------------------------------
 def main():
@@ -66,7 +72,7 @@ def main():
     args = get_args()
     #fh_list = args.infiles
     sort = args.sort
-    min_ct = args.min
+    min_freq = args.min
 
     wdict = defaultdict(int)
     for fh_handle in args.infiles:
@@ -79,16 +85,17 @@ def main():
 
 
     if sort == 'word':
-        for pair in sorted(wdict.items()):
-            wrd, wrdct = pair
-            if wrdct >= int(min_ct):
-                print('{:20} {}'.format(wrd, wrdct))
+        for wrd, freq in sorted([(x[0], x[1]) for x in wdict.items()]):
+            print_words(w=wrd, f=freq, mf=min_freq)
+            #if wrdct >= int(min_ct):
+                #print('{:20} {}'.format(wrd, wrdct))
 
     elif sort == 'frequency':
-        for pair in sorted([(x[1], x[0]) for x in wdict.items()]):
-            wrdct, wrd = pair
-            if wrdct >= int(min_ct):
-                print('{:20} {}'.format(wrd, wrdct))
+        for freq, wrd in sorted([(x[1], x[0]) for x in wdict.items()]):
+            print_words(w=wrd, f=freq, mf=min_freq)
+            #wrdct, wrd = pair
+            #if wrdct >= int(min_ct):
+            #    print('{:20} {}'.format(wrd, wrdct))
 
 #    for wrds in sorted_dict.items(): 
 #        w, wctr = wrds
