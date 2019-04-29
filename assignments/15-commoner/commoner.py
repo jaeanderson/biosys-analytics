@@ -12,7 +12,7 @@ import sys
 import io
 import re
 import logging
-#from tabulate import tabulate
+from tabulate import tabulate
 
 #----------------------------------------------------------
 def get_args():
@@ -142,10 +142,10 @@ def common(w1, w2, maxd):
     common_list = []
     for wrd1 in w1:
         for wrd2 in w2:
-            if wrd1 == wrd2:
-                #ham_dist = dist(s1=wrd1, s2=wrd2)
-                common_list.append((wrd1, wrd2, dist(s1=wrd1, s2=wrd2)))
-                #print(word1, word2, ham_dist)
+            ham_dist = dist(s1=wrd1, s2=wrd2)
+            if (wrd1 == wrd2) or (ham_dist <= int(maxd)):
+                common_list.append((wrd1, wrd2, ham_dist))
+                logging.debug('w1: {} w2: {} ham_d: {}'.format(wrd1, wrd2, ham_dist))
 
     return sorted(common_list)
 
@@ -164,11 +164,11 @@ def test_common():
     return 0
 
 #----------------------------------------------------------
-def print_table(cwlist, fmt):
+def print_table(cwlist, thdrs, fmt):
     """Prints common words in PSQL table format"""
     
-    #print(tabulate(cw_list, headers=['word1','word2','distance'], tablefmt=fmt))
-    return 0
+    print(tabulate(cwlist, headers=thdrs, tablefmt=fmt))
+    #return 0
 #----------------------------------------------------------
 def main():
     """Sko-codin!"""
@@ -180,11 +180,20 @@ def main():
     debug = args.debug
     table = args.table
 
+    table_hdrs=['word2','word1','distance']
+
+    logging.basicConfig(
+        filename=logfile,
+        filemode='w',
+        level=logging.DEBUG if debug else logging.CRITICAL)
+
     if int(max_ham_dist) < 0:
         die('--distance "{}" must be > 0'.format(max_ham_dist))
 
     fh1 = args.infiles[0]
     fh2 = args.infiles[1]
+    logging.debug('\nfile1 = {}\nfile2 = {}'.format(fh1, fh2))
+
 
     words1 = uniq_words(f=fh1, mlen=min_len)
     words2 = uniq_words(f=fh2, mlen=min_len)
@@ -193,14 +202,12 @@ def main():
     if len(common_words) == 0:
         print('No words in common.')
     
-
     if table:
-        print('table output')
-        print_table(cwlist=common_words, fmt='psql')
+        print_table(cwlist=common_words, thdrs=table_hdrs, fmt='psql')
     else:
-        print(common_words)
-        print_table(cwlist=common_words, fmt='simple')        
-
+        print(*table_hdrs, sep='\t')
+        for t in common_words:
+            print('\t'.join(map(str, t)))
 
 #----------------------------------------------------------
 if __name__ == "__main__":
