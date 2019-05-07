@@ -3,7 +3,7 @@
 """
 Name: jranderson
 Date: 05.07.19
-Purpose: Find Common Words with Mismatches
+Purpose: Average all numbers in document
 """
 
 import argparse
